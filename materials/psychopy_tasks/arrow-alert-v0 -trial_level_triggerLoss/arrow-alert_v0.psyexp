@@ -444,8 +444,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="# Kia: The following 2 lines are preventing the trigger loss&amp;#10;&amp;#10;try:&amp;#10;    port.close()&amp;#10;    port.open()&amp;#10;except:&amp;#10;    print(&quot;could not open the port&quot;)&amp;#10;    continue&amp;#10;#Kia: just having port.close/open without try except caused the task to quit.&amp;#10;# So, I had to have this try except continue. Continue causes the code to skip the current iteration of the loop.&amp;#10;# Due to this, I did not want to skip the whole block. So, I moved this code from begin routine&amp;#10;# to each frame. The issue is that in case of trigger loss, task will freeze and not continue we fix the trigger loss issue." valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="try {&amp;#10;    port.close();&amp;#10;    port.open();&amp;#10;} catch(e) {&amp;#10;    console.log(&quot;could not open the port&quot;);&amp;#10;    continue;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>

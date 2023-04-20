@@ -96,7 +96,7 @@ sd(timeVal$timeDiff)
 # sd(test$value)
 # 1.754728
 
-######## Below is the timing test results for the Flanker task of the thrive study task on April 5, 2023- System 2 with block level trigger loss ######
+######## Below is the timing test results for the Flanker task of the thrive study task on April 6, 2023- System 1 with block level trigger loss ######
 # response triggers
 # mean(test$value)
 # 1.700855

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on April 05, 2023, at 14:15
+    on April 06, 2023, at 11:23
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -106,19 +106,30 @@ import serial #used for sending eeg triggers
 import time #indirerctly used for sending eeg triggers (how long to wait before clearing port)
 
 win.mouseVisible = False #hide mouse cursor
-port = serial.Serial('COM4') #open specified port (COM3) for sending eeg triggers to   
+#Kia: I had to change COM3 to COM4 as it is the port name on Egret and Heron PCs.
+port = serial.Serial('COM4') # open specified port (COM3) for sending eeg triggers to   
 # Kia: The following 2 lines are preventing the trigger loss
 port.close()
 port.open()
-
+# Kia: end
 PulseWidth = 0.002 #how long to wait before clearing port after sending trigger (2 ms is sufficient at 1000 hz sampling rate)
 
 port.write([0x00]) #clear serial port
 time.sleep(PulseWidth) #wait PulseWidth amount of time before doing anything else
 
+# --- Initialize components for Routine "logo" ---
+logo_text = visual.TextStim(win=win, name='logo_text',
+    text='Arrow Alert',
+    font='Open Sans',
+    pos=(0, 0), height=0.15, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
+logo_resp = keyboard.Keyboard()
+
 # --- Initialize components for Routine "welcome" ---
 welcome_text = visual.TextStim(win=win, name='welcome_text',
-    text='Arrow Alert Game\n\nWelcome to the arrow alert game. In this game, arrows will be quickly flashed on the screen. Your goal is to respond to the direction of the MIDDLE arrow, and to respond as quickly as you can without making mistakes. \n\nIf the MIDDLE arrow is pointing to the right, use your right hand to press the right button. If the MIDDLE arrow is pointing to the left, use your left hand to press the left button. \n\n\n',
+    text='Arrow Alert \n\nWelcome to the arrow alert game. In this game, arrows will be quickly flashed on the screen. Your goal is to respond to the direction of the MIDDLE arrow, and to respond as quickly as you can without making mistakes. \n\nIf the MIDDLE arrow is pointing to the right, use your right hand to press the right button. If the MIDDLE arrow is pointing to the left, use your left hand to press the left button. \n\n\n',
     font='Arial',
     units='height', pos=(0, 0), height=0.04, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -128,7 +139,7 @@ welcome_keyResp = keyboard.Keyboard()
 
 # --- Initialize components for Routine "welcome2" ---
 welcome_text_2 = visual.TextStim(win=win, name='welcome_text_2',
-    text='Arrow Game\n\nWelcome to the arrow game. In this game, arrows will be quickly flashed on the screen. Your goal is to respond to the direction of the MIDDLE arrow, and to respond as quickly as you can without making mistakes. \n\nIf the MIDDLE arrow is pointing to the right, use your right hand to press the right button. If the MIDDLE arrow is pointing to the left, use your left hand to press the left button. \n\nPress the right button to continue\n',
+    text='Arrow Alert\n\nWelcome to the arrow alert game. In this game, arrows will be quickly flashed on the screen. Your goal is to respond to the direction of the MIDDLE arrow, and to respond as quickly as you can without making mistakes. \n\nIf the MIDDLE arrow is pointing to the right, use your right hand to press the right button. If the MIDDLE arrow is pointing to the left, use your left hand to press the left button. \n\nPress the right button to continue\n',
     font='Arial',
     units='height', pos=(0, 0), height=0.04, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -672,6 +683,7 @@ blockCounter = 0
 # we will need to use endTask.
 # see begin routine tab for more.
 endTask = 0 
+#Kia: end
 condition_whichCondition_text = visual.TextStim(win=win, name='condition_whichCondition_text',
     text='',
     font='Arial',
@@ -908,6 +920,103 @@ for thisComponent in setupComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # the Routine "setup" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# --- Prepare to start Routine "logo" ---
+continueRoutine = True
+routineForceEnded = False
+# update component parameters for each repeat
+logo_resp.keys = []
+logo_resp.rt = []
+_logo_resp_allKeys = []
+# keep track of which components have finished
+logoComponents = [logo_text, logo_resp]
+for thisComponent in logoComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+frameN = -1
+
+# --- Run Routine "logo" ---
+while continueRoutine:
+    # get current time
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *logo_text* updates
+    if logo_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        logo_text.frameNStart = frameN  # exact frame index
+        logo_text.tStart = t  # local t and not account for scr refresh
+        logo_text.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(logo_text, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'logo_text.started')
+        logo_text.setAutoDraw(True)
+    
+    # *logo_resp* updates
+    waitOnFlip = False
+    if logo_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        logo_resp.frameNStart = frameN  # exact frame index
+        logo_resp.tStart = t  # local t and not account for scr refresh
+        logo_resp.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(logo_resp, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'logo_resp.started')
+        logo_resp.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(logo_resp.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(logo_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if logo_resp.status == STARTED and not waitOnFlip:
+        theseKeys = logo_resp.getKeys(keyList=['c'], waitRelease=False)
+        _logo_resp_allKeys.extend(theseKeys)
+        if len(_logo_resp_allKeys):
+            logo_resp.keys = _logo_resp_allKeys[-1].name  # just the last key pressed
+            logo_resp.rt = _logo_resp_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in logoComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# --- Ending Routine "logo" ---
+for thisComponent in logoComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if logo_resp.keys in ['', [], None]:  # No response was made
+    logo_resp.keys = None
+thisExp.addData('logo_resp.keys',logo_resp.keys)
+if logo_resp.keys != None:  # we had a response
+    thisExp.addData('logo_resp.rt', logo_resp.rt)
+thisExp.nextEntry()
+# the Routine "logo" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # --- Prepare to start Routine "welcome" ---
@@ -2157,6 +2266,7 @@ for thisPrac_block_loop in prac_block_loop:
     # Kia: The following 2 lines are preventing the trigger loss
     port.close()
     port.open()
+    #Kia: end
     prac_reminder_keyResp.keys = []
     prac_reminder_keyResp.rt = []
     _prac_reminder_keyResp_allKeys = []
@@ -2805,6 +2915,9 @@ for thisPrac_block_loop in prac_block_loop:
                     numCorr = numCorr +1 #iterate number of correct responses for this block
                 elif target == 'left': #if a left target stim was shown this trial
                     accuracy = 0 #mark this trial as an error
+        # Kia: following two lines of code fixes the issue of accuracy results whence there is no response.
+        elif not prac_stim_keyResp.keys: # Kia: if no response was made
+            accuracy = 0
                     
         # save this trial's accuracy to our output file
         prac_trial_loop.addData('accuracy', accuracy)
@@ -2967,13 +3080,14 @@ for thisTask_condition_loop in task_condition_loop:
     #reset the following variables at the start of the experiment
     blockCounter = 0
     
-    
+    # Kia
     if conditionText == 'Observe other':
-        endTask = 1
+        endTask = 1 # will skip this round of the block
     elif conditionText == 'Observed':
-        endTask = 0
+        endTask = 0 # will not skip this round of the block. So, participant will play the task.
     elif conditionText == 'Alone':
-        endTask = 0
+        endTask = 0 # will not skip this round of the block. So, participant will play the task.
+    #Kia: end
     condition_whichCondition_text.setText(conditionText)
     condition_keyResp.keys = []
     condition_keyResp.rt = []
@@ -3099,12 +3213,11 @@ for thisTask_condition_loop in task_condition_loop:
         # Kia: The following 2 lines are preventing the trigger loss
         port.close()
         port.open()
-        
-        # check for endTask. If this round is observe other condition, we will skip these routines.
+        # Kia: check for endTask. If this round is observe other condition, we will skip these routines.
         if endTask:
             continueRoutine = False
             task_block_loop.finished = True
-        
+        #Kia: end
         blockCounter = blockCounter +1
         
         if blockCounter == 1:
@@ -3335,12 +3448,12 @@ for thisTask_condition_loop in task_condition_loop:
             routineForceEnded = False
             # update component parameters for each repeat
             # Run 'Begin Routine' code from endTask_code_2
-            # check for endTask. If this round is observe other condition, we will skip these routines.
+            # Kia: check for endTask. If this round is observe other condition, we will skip these routines.
             if endTask:
                 continueRoutine = False
                 task_trial_loop.finished = True
                 task_block_loop.finished = True
-            
+            # Kia: end.
             # Run 'Begin Routine' code from task_isi_code
             # pick the ISI for the next routine
             # this code component is set to 'both' because we need to remove the 'np'
@@ -3691,7 +3804,10 @@ for thisTask_condition_loop in task_condition_loop:
                         numCorr = numCorr +1 #iterate number of correct responses for this block
                     elif target == 'left': #if a left target stim was shown this trial
                         accuracy = 0 #mark this trial as an error
-                        
+            # Kia: following two lines of code fixes the issue of accuracy results whence there is no response.
+            elif not prac_stim_keyResp.keys: # Kia: if no response was made
+                accuracy = 0
+            # Kia: end.
             # save this trial's accuracy to our output file
             task_trial_loop.addData('accuracy', accuracy)
             # the Routine "task_stimRoutine" was not non-slip safe, so reset the non-slip timer
@@ -3706,11 +3822,11 @@ for thisTask_condition_loop in task_condition_loop:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from endTask_code_3
-        # check for endTask. If this round is observe other condition, we will skip these routines.
+        # Kia: check for endTask. If this round is observe other condition, we will skip these routines.
         if endTask:
             continueRoutine = False
             task_block_loop.finished = True
-        
+        # Kia: end.
         # Run 'Begin Routine' code from task_blockFeed_code
         blockAcc = numCorr / trialNum #compute accuracy for this block
         

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on April 05, 2023, at 12:24
+    on April 06, 2023, at 10:18
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -2469,7 +2469,6 @@ for thisPrac_block_loop in prac_block_loop:
         routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from trigger_loss_code
-        # Kia: The following 2 lines are preventing the trigger loss
         
         
         # Run 'Begin Routine' code from prac_isi_code
@@ -2532,13 +2531,18 @@ for thisPrac_block_loop in prac_block_loop:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # Run 'Each Frame' code from trigger_loss_code
+            # Kia: The following 2 lines are preventing the trigger loss
+            
             try:
                 port.close()
                 port.open()
             except:
                 print("could not open the port")
-                continue
-            
+                pass
+            #Kia: just having port.close/open without try except caused the task to quit.
+            # So, I had to have this try except continue. Continue causes the code to skip the current iteration of the loop.
+            # Due to this, I did not want to skip the whole block. So, I moved this code from begin routine
+            # to each frame. The issue is that in case of trigger loss, task will freeze and not continue we fix the trigger loss issue.
             
             # *prac_centerImg* updates
             if prac_centerImg.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
