@@ -5,9 +5,9 @@
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
-    <Param val="u'data/%s_%s_%s' % (expInfo['id'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="u'data/sub-%s_%s_s%s_r%s_e1' % (expInfo['id'], expName, expInfo['session'], expInfo['run'], )" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
-    <Param val="{'id': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'id': '', 'session': '1', 'run': '1'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
