@@ -5,9 +5,9 @@
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
-    <Param val="u'data/%s_%s_%s_%s_%s_%s' % (expInfo['id'], expInfo['counterbalance'], expInfo['session'], expInfo['run'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="u'data/sub-%s_%s_cb%s-%s_s%s_r%s_e1' % (expInfo['id'], expName, expInfo['counterbalance'], expInfo['skipOther'], expInfo['session'], expInfo['run'], )" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
-    <Param val="{'id': '1', 'counterbalance': &quot;['A1', 'A2', 'B1', 'B2', 'C1', 'C2']&quot;, 'skipOther': '0', 'session': '1', 'run': '1'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'id': '', 'counterbalance': &quot;['A1', 'A2', 'B1', 'B2', 'C1', 'C2']&quot;, 'skipOther': '0', 'session': '1', 'run': '1'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -39,7 +39,7 @@
     <Param val="False" valType="bool" updates="None" name="elSimMode"/>
     <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
     <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
-    <Param val="Arrow_Alert" valType="str" updates="None" name="expName"/>
+    <Param val="arrow-alert-v0" valType="str" updates="None" name="expName"/>
     <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
     <Param val="None" valType="str" updates="None" name="eyetracker"/>
     <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
