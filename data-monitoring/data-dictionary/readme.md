@@ -2,7 +2,7 @@
 
 The columns below are expected in the central tracker datadict:
 
-* **variable**: exact name of data variable; for non-questionnaire data (psychopy, audio, video, eeg, digi), the variable name should be "<task>_<dataType>"; for questionnaire data (redcap_data and redcap_scrd), the variable name should be the exact questionnaire or subscore name
+* **variable**: exact name of data variable; for non-questionnaire data (psychopy, audio, video, eeg, digi), the variable name should be "\<task\>_\<dataType\>"; for questionnaire data (redcap_data and redcap_scrd), the variable name should be the exact questionnaire or subscore name
 * **datatype**: type of data; e.g., consent, psychopy, eeg, digi, audio, video, redcap_data, redcap_scrd, or other data type
 * **description**: human-readable description of the variable
 * **detail**: clarification of how the variable value is calculated/derived
