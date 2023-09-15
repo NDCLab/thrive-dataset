@@ -2,7 +2,7 @@
 
 # init proj specific variables
 dataset="/home/data/NDClab/datasets/thrive-dataset"
-childdata="false"
+childdata="true"
 [[ $childdata == true ]] && childdata="true"
 
 # determine if sourcedata/raw has session folders, reproduce session+run structure in checked

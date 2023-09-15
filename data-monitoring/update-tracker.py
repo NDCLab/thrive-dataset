@@ -8,7 +8,8 @@ import math
 import datetime
 
 # list hallMonitor key
-provenance = ["code-hallMonitor", "code-instruments"]
+#provenance = ["code-hallMonitor", "code-instruments"]
+
 completed = "_complete"
 
 class c:
@@ -23,7 +24,8 @@ def get_redcap_columns(datadict_df):
     df = datadict_df
 
     # filter for prov
-    df = df.loc[df['provenance'].isin(provenance)]
+    #df = df.loc[df['provenance'].isin(provenance)]
+    #df.drop(axis=0, index=0, inplace=True)
 
     cols = {}
     for _, row in df.iterrows():
@@ -32,6 +34,10 @@ def get_redcap_columns(datadict_df):
             cols[row["variable"] + completed] = row["variable"]
             cols[row["variable"] + "es" + completed] = row["variable"]
             continue
+        ########
+        if row["variable"].startswith("id"):
+            continue
+###################
         allowed_suffixes = row["allowedSuffix"].split(", ")
         for ses_tag in allowed_suffixes:
             cols[row["variable"] + "_" + ses_tag + completed] = row["variable"] + "_" + ses_tag
