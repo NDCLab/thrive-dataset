@@ -6,6 +6,7 @@ import pathlib
 import re
 import math
 import datetime
+from collections import defaultdict
 
 # list hallMonitor key
 #provenance = ["code-hallMonitor", "code-instruments"]
@@ -28,38 +29,68 @@ def get_redcap_columns(datadict_df):
     #df.drop(axis=0, index=0, inplace=True)
 
     cols = {}
+    key_counter = defaultdict(lambda: 0)
+    allowed_duplicate_columns = []
     for _, row in df.iterrows():
-        # skip redcap static
-        if row["variable"].startswith("consent") or row["variable"].startswith("assent"):
-            cols[row["variable"] + completed] = row["variable"]
-            cols[row["variable"] + "es" + completed] = row["variable"]
+        if row["variable"] == "id":
             continue
-        ########
-        if row["variable"].startswith("id"):
+        if isinstance(row["allowedSuffix"], float) and math.isnan(row["allowedSuffix"]):
+            allowed_suffixes = [""]
+        else:
+            allowed_suffixes = row["allowedSuffix"].split(", ")
+            allowed_suffixes = ["_" + ses for ses in allowed_suffixes]
+        prov = row["provenance"].split(" ")
+        #if "file:" in prov:
+        if "file:" in prov and "variable:" in prov:
+            idx = prov.index("file:")
+            rc_filename = prov[idx+1].strip("\";")
+            idx = prov.index("variable:")
+            rc_variable = prov[idx+1].strip("\";")
+            if rc_variable == "":
+                rc_variable = row["variable"]
+            if not rc_filename in cols.keys():
+                cols[rc_filename] = {}
+        else:
             continue
-###################
-        allowed_suffixes = row["allowedSuffix"].split(", ")
+        #key_counter[rc_variable] += 1
         for ses_tag in allowed_suffixes:
-            cols[row["variable"] + "_" + ses_tag + completed] = row["variable"] + "_" + ses_tag
+            #cols[rc_filename][row["variable"] + ses_tag + completed] = row["variable"] + ses_tag
+            cols[rc_filename][rc_variable + ses_tag + completed] = row["variable"] + ses_tag
+            key_counter[rc_variable + ses_tag + completed] += 1
             # also map Sp. surveys to same column name in central tracker if completed
-            surv_match = re.match('^([a-zA-Z0-9\-]+)(_[a-z])?(_scrd[a-zA-Z]+)?(_[a-zA-Z]{2,})?$', row["variable"])
-            if surv_match and "redcap_data" in row["description"]:
+            #surv_match = re.match('^([a-zA-Z0-9\-]+)(_[a-z])?(_scrd[a-zA-Z]+)?(_[a-zA-Z]{2,})?$', row["variable"])
+            surv_match = re.match('^([a-zA-Z0-9\-]+)(_[a-z])?(_scrd[a-zA-Z]+)?(_[a-zA-Z]{2,})?$', rc_variable)
+            if surv_match and "redcap_data" in row["dataType"]:
                 surv_version = '' if not surv_match.group(2) else surv_match.group(2)
                 scrd_str = '' if not surv_match.group(3) else surv_match.group(3)
                 multiple_report_tag = '' if not surv_match.group(4) else surv_match.group(4)
                 surv_esp = surv_match.group(1) + 'es' + surv_version + scrd_str + multiple_report_tag + ses_tag
-                cols[surv_esp + completed] = row["variable"]
-    return cols
+                #cols[rc_filename][surv_esp + completed] = row["variable"] + ses_tag
+                cols[rc_filename][surv_esp + completed] = row["variable"] + ses_tag
+                key_counter[surv_esp + completed] += 1
+            if "consent" in row["dataType"] or "assent" in row["dataType"]:
+                #cols[rc_filename][row["variable"] + "es" + completed] = row["variable"]
+                cols[rc_filename][row["variable"] + "es" + completed] = row["variable"]
+    ###
+    key_counter['bfne_b_s1_r1_e1_complete'] += 2
+    key_counter['masi_b_s1_r1_e1_complete'] += 2
+    ###
+    for key, value in key_counter.items():
+        if value > 1:
+            allowed_duplicate_columns.append(key)
+    return cols, allowed_duplicate_columns
+    #return cols
 
-def get_multiple_reports_tags(datadict_df):
-    # identical surveys with multiple reports (eg from both child and parent) should have a tag (<surv_name>_"parent"_s1_r1_e1) in var name in datadict
-    df = datadict_df
-    names_list = []
-    for _, row in df.iterrows():
-        surv_match = re.match('^([a-zA-Z0-9\-]+)(_[a-z])?(_scrd[a-zA-Z]+)?(_[a-zA-Z]{2,})?$', row.variable)
-        if surv_match and surv_match.group(4) and surv_match.group(4)[1:] not in names_list and row["dataType"] == "redcap_data":
-            names_list.append(surv_match.group(4)[1:])
-    return names_list
+
+#def get_multiple_reports_tags(datadict_df):
+#    # identical surveys with multiple reports (eg from both child and parent) should have a tag (<surv_name>_"parent"_s1_r1_e1) in var name in datadict
+#    df = datadict_df
+#    names_list = []
+#    for _, row in df.iterrows():
+#        surv_match = re.match('^([a-zA-Z0-9\-]+)(_[a-z])?(_scrd[a-zA-Z]+)?(_[a-zA-Z]{2,})?$', row.variable)
+#        if surv_match and surv_match.group(4) and surv_match.group(4)[1:] not in names_list and row["dataType"] == "redcap_data":
+#            names_list.append(surv_match.group(4)[1:])
+#    return names_list
 
 def get_tasks(datadict_df):
     df = datadict_df
@@ -75,7 +106,7 @@ def get_tasks(datadict_df):
 
 def get_IDs(datadict_df):
     df_dd = datadict_df
-    id_desc = df_dd.set_index("variable").loc["id", "description"].split(" ")
+    id_desc = df_dd.set_index("variable").loc["id", "provenance"].split(" ")
     # ID description column should contain redcap and variable from which to read IDs, in format 'file: "{name of redcap}"; variable: "{column name}"'
     for i in id_desc:
         if "file:" in i:
@@ -125,8 +156,9 @@ if __name__ == "__main__":
 
     DATA_DICT = dataset + "/data-monitoring/data-dictionary/central-tracker_datadict.csv"
     df_dd = pd.read_csv(DATA_DICT)
-    redcheck_columns = get_redcap_columns(df_dd)
-    multiple_reports_tags = get_multiple_reports_tags(df_dd)
+    #redcheck_columns = get_redcap_columns(df_dd)
+    redcheck_columns, allowed_duplicate_columns = get_redcap_columns(df_dd)
+    #multiple_reports_tags = get_multiple_reports_tags(df_dd)
     tasks_dict = get_tasks(df_dd)
     ids = get_IDs(df_dd)
     
@@ -149,9 +181,18 @@ if __name__ == "__main__":
     all_redcap_columns = dict() # list of all redcap columns whose names should be mirrored in central tracker
     
     if redcaps[0] != "none":
-        allowed_duplicate_columns = []
-        for redcap_path in redcaps:
-            # for bbsRA REDcap get thrive IDs from 'bbsratrk_acthrive_s1_r1_e1' column
+        #allowed_duplicate_columns = []
+        for expected_rc in redcheck_columns.keys():
+            present = False
+            for redcap in redcaps:
+                if expected_rc in basename(redcap.lower()) and present == False:
+                    redcap_path = redcap
+                    present = True
+                elif expected_rc in basename(redcap.lower()) and present == True:
+                    sys.error("Error: multiple redcaps found with name specified in datadict, " + redcap_path + " and " + redcap + ", exiting.")
+            if present == False:
+                print("Error: can't find redcap specified in datadict", expected_rc, ", exiting.") #Just a warning?
+
             if 'ThrivebbsRA' in redcap_path:
                 for column in pd.read_csv(redcap_path).columns:
                     if column.startswith('bbsratrk_acthrive'):
@@ -181,16 +222,16 @@ if __name__ == "__main__":
             rc_subjects.sort()
 
             all_keys = dict()
-            for key, value in redcheck_columns.items():
+            for key, value in redcheck_columns[expected_rc].items():
                 all_keys[key] = value
-                for tag in multiple_reports_tags:
-                    surv_re = re.match('^([a-zA-Z0-9\-]+)(_[a-z])?(_scrd[a-zA-Z]+)?(_[a-zA-Z]{2,})?(_s[0-9]+_r[0-9]+_e[0-9]+)$', value)
-                    if tag in redcap_path and surv_re and surv_re.group(4) == '_' + tag:
-                        surv_version = '' if not surv_re.group(2) else surv_re.group(2)
-                        scrd_str = '' if not surv_re.group(3) else surv_re.group(3)
-                        key = surv_re.group(1) + surv_version + scrd_str + surv_re.group(5) + completed
-                        allowed_duplicate_columns.append(key)
-                        all_keys[key] = value
+                #for tag in multiple_reports_tags:
+                #    surv_re = re.match('^([a-zA-Z0-9\-]+)(_[a-z])?(_scrd[a-zA-Z]+)?(_[a-zA-Z]{2,})?(_s[0-9]+_r[0-9]+_e[0-9]+)$', value)
+                #    if tag in redcap_path and surv_re and surv_re.group(4) == '_' + tag:
+                #        surv_version = '' if not surv_re.group(2) else surv_re.group(2)
+                #        scrd_str = '' if not surv_re.group(3) else surv_re.group(3)
+                #        key = surv_re.group(1) + surv_version + scrd_str + surv_re.group(5) + completed
+                #        allowed_duplicate_columns.append(key)
+                #        all_keys[key] = value
                 # adds "parent" to redcap column name in central tracker
 
             for index, row in rc_df.iterrows():
@@ -329,6 +370,12 @@ if __name__ == "__main__":
                         tracker_df.loc[dir_id, task + "_" + sfx] = "0"
 
     tracker_df.to_csv(data_tracker_file)
+
+    # Create more readable csv with no blank columns
+    data_tracker_filename = splitext(data_tracker_file)[0]
+    tracker_df_no_blank_columns = tracker_df.loc[:, tracker_df.notnull().any(axis=0)]
+    tracker_df_no_blank_columns = tracker_df_no_blank_columns.fillna("NA")
+    tracker_df_no_blank_columns.to_csv(data_tracker_filename + "_viewable.csv")
 
             # make remaining empty values equal to 0
             # tracker_df[collabel] = tracker_df[collabel].fillna("0")
