@@ -2,7 +2,7 @@
 
 The columns below are expected in the central tracker datadict:
 
-* **variable**: exact name of data variable; for non-questionnaire data (psychopy, audio, video, eeg, digi), the variable name should be "\<task\>_\<dataType\>"; for questionnaire data (redcap_data and redcap_scrd), the variable name should be the exact questionnaire or subscore name
+* **variable**: exact name of data variable; for non-questionnaire data (psychopy, audio, video, eeg, digi), the variable name should be "\<task\>_\<dataType\>"; for questionnaire data (redcap_data and redcap_scrd), the variable name should be the exact questionnaire or subscore name, except in the case that a self-report survey is administered to both parent and child (in which case, "_parent" is appended to the end of the variable name for the parent self-report to distinguish it from the child self-report)
 * **datatype**: type of data; e.g., consent, psychopy, eeg, digi, audio, video, redcap_data, redcap_scrd, or other data type
 * **description**: human-readable description of the variable
 * **detail**: clarification of how the variable value is calculated/derived
@@ -13,5 +13,5 @@ The columns below are expected in the central tracker datadict:
 * **naValueType**: indication of how NA values are flagged (NA, NaN, etc.)
 * **activeStatus**: indication of whether variable is currently being used/collected
 * **replacement**: for inactive variables, indication of any variable that was used in replacement
-* **provenance**: indication of whether variable is collected directly from the participant and by what platform (direct-psychopy, direct-pavlovia) or, if not direct, the origin of its derivation (that is, the script the calculates it, specified as code-SCRIPT, such as code-instruments or code-preproc.R, or the protocol used for manual coding, such as manual-errorCoding). for REDCap data, provenance will specify the file and variable that the row corresponds to (file: "[name]", variable:"[name]")
+* **provenance**: indication of whether variable is collected directly from the participant and by what platform (direct-psychopy, direct-pavlovia) or, if not direct, the origin of its derivation (that is, the script the calculates it, specified as code-SCRIPT, such as code-instruments or code-preproc.R, or the protocol used for manual coding, such as manual-errorCoding). for REDCap data, provenance will specify the REDCap file and the exact variable within that file that the row corresponds to (file: "[name]", variable:"[name]"); if the variable name is the same as what is listed in the variable column, the provenance can simply state variable: ""
 * **expectedFileExt**: the file extensions expected for each data type, separated by commas (e.g., ".eeg, .vmrk, .vhdr" for EEG data); if multiple extensions are allowed but not necessarily all expected, extensions can be separated by \| (vertical bar) (e.g., ".zip.gpg \| .tar.gz.gpg"); if this is not relevant, type NA
