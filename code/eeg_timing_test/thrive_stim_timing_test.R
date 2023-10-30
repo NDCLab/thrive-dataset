@@ -154,7 +154,7 @@ sd(social_dat$timeDiff)
 # 12.31915
 #  sd(test$value)
 # 1.575718
-######## Below is the timing test results for the Flanker task of the thrive study task on April 2, 2023- System 1
+######## Below is the timing test results for the Flanker task of the thrive study task on June 2, 2023- System 1
 # stimulus triggers
 # mean(test$value)
 # 12.775

@@ -13,7 +13,7 @@ library(dplyr)
 #setwd("~/Users/kihossei/Desktop") #set working directory to where your text file (the one that you have triggers and their times) is located.
 path <- ("/Users/kihossei/Documents/GitHub/thrive-dataset/code/eeg_timing_test")
 
-mrkTxt <- readLines(paste(path, "/sys_1_timetest_resp.vmrk", sep = "")) # load the .vmrk file into the workspace.
+mrkTxt <- readLines(paste(path, "/thrive_sys_1_timingtest_resp.vmrk", sep = "")) # load the .vmrk file into the workspace.
 myDat <- setNames(data.frame(matrix(nrow = length(mrkTxt), ncol = 1)), c("colA")) # creates an empty data frame with a single column and row # = length(mrkTxt)
 
 # This for loop creates a dataframe from the loaded text file. 
@@ -59,7 +59,7 @@ for (i in 1:nrow(newDat)){
   if (str_detect(newDat$colC[i], "S 41")  || str_detect(newDat$colC[i], "S 42") || str_detect(newDat$colC[i], "S 43") || str_detect(newDat$colC[i], "S 44")){ # detects non-social stim markers
     current_trial_num <- trial_num_counter # store the current trial number so, we can use it below
     trial_num_counter <- trial_num_counter + 1 # as we have found the stim marker above, we update trial number counter for the next trial
-    stim_marker_sent <- gsub(",.*", "", newDat$colC[i]) # The stim marker was sent
+    stim_marker_sent <- gsub(",.*", "", newDat$colC[i]) # Type of the sent stim marker
     condition_type <- "non_social"
     trial_num <- current_trial_num
     marker_sent <- stim_marker_sent # The stim marker was sent
@@ -80,8 +80,8 @@ for (i in 1:nrow(newDat)){
           time_sent <- str2num(gsub(".*,", "", newDat$colC[i + n])) # the time when the marker was sent
           main_dat[nrow(main_dat) + 1,] <- c(condition_type, trial_num, stim_marker_sent, marker_sent, time_sent)
         }
+        n <- n + 1 # updating the counter for "while" loop
       }
-      n <- n + 1 # updating the counter for "while" loop
     }
   } else if (str_detect(newDat$colC[i], "S 51")  || str_detect(newDat$colC[i], "S 52") || str_detect(newDat$colC[i], "S 53") || str_detect(newDat$colC[i], "S 54")){ # detects social stim markers
     current_trial_num <- trial_num_counter
@@ -107,8 +107,8 @@ for (i in 1:nrow(newDat)){
           time_sent <- str2num(gsub(".*,", "", newDat$colC[i + n])) # the time when the marker was sent
           main_dat[nrow(main_dat) + 1,] <- c(condition_type, trial_num, stim_marker_sent, marker_sent, time_sent)
         }
+        n <- n + 1 # updating the counter for "while" loop
       }
-      n <- n + 1 # updating the counter for "while" loop
     }
 
   } else if (str_detect(newDat$colC[i], "S  1")  || str_detect(newDat$colC[i], "S  2") || str_detect(newDat$colC[i], "S  3") || str_detect(newDat$colC[i], "S  4")){ # detects practice stim markers
@@ -134,12 +134,20 @@ for (i in 1:nrow(newDat)){
           time_sent <- str2num(gsub(".*,", "", newDat$colC[i + n])) # the time when the marker was sent
           main_dat[nrow(main_dat) + 1,] <- c(condition_type, trial_num, stim_marker_sent, marker_sent, time_sent)
         }
+        n <- n + 1 # updating the counter for "while" loop
       }
-      n <- n + 1 # updating the counter for "while" loop
     }
   }
 }
-#
+# Run the code all the way here. After finishing there is gonna be an error as the data row finishes.
+# Then select the codes below to run.
+
+
+
+
+
+
+
 # Computing the response time offset using the data set created above (i.e., main_dat)
 latency_dat <- setNames(data.frame(matrix(ncol = 4)), c("condition_type", "trial_num", "stim_marker_sent", "time_diff")) # an empty dataframe that will be filled with this information.
 number_of_trials <- max(as.numeric(main_dat$trial_num), na.rm = TRUE) # total number of trials in this dataset (i.e., main_dat)
@@ -197,6 +205,7 @@ for (trial_num_in_dat in 1:number_of_trials){
     latency_dat[nrow(latency_dat) + 1,] <- c(condition_type, trial_num, stim_marker_sent, time_diff)
   }
 }
+
 latency_dat$time_diff <- as.numeric(latency_dat$time_diff)
 # min(latency_dat$time_diff, na.rm = TRUE)
 # max(latency_dat$time_diff, na.rm = TRUE)
@@ -204,18 +213,6 @@ mean(latency_dat$time_diff, na.rm = TRUE)
 sd(latency_dat$time_diff, na.rm = TRUE)
 
 reorderd_latency_dat_max_to_min <- latency_dat %>% arrange(desc(time_diff)) # reordering data set for visual inspection
-
-
-<<<<<<< Updated upstream:code/eeg_timing_test/mini_mfe_resp_timing_test.R
-######## Below is the timing test results for the Flanker task of the thrive study task on April 5, 2023- System 2 with block level trigger loss ######
-# response triggers
-# mean(test$value)
-# 1.700855
-# sd(test$value)
-# 2.085521
-=======
->>>>>>> Stashed changes:code/eeg_timing_test/thrive_resp_timing_test.R
-
 
 
 
