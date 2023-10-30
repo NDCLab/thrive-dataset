@@ -123,7 +123,7 @@ all_stimMarkers_eventNums = find(ismember({EEG.event.type},all_stimMarkers));
 % fix "Index exceeds the number of array elements." 
 total_eventNums = size(EEG.event,2);
 
-%loop through all stim marker event numbers identified in the all_stimMarkers_eventNums vector and label 
+%loop through all stim marker event numbers idented in the all_stimMarkers_eventNums vector and label 
 for t = all_stimMarkers_eventNums %t = event numbers stored in all_stimMarkers_eventNums
     
     stimEventNum = t;
