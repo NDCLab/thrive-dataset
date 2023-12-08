@@ -1,0 +1,69 @@
+Found newest redcaps: Thrivebbschilds1r1_DATA_2023-12-04_1533.csv
+Thrivebbsparents1r1_DATA_2023-12-04_1534.csv
+ThrivebbsRAs1r1_DATA_2023-12-04_1533.csv
+Thriveconsent_DATA_2023-12-04_1533.csv
+Thriveiqschilds1r1_DATA_2023-12-04_1534.csv
+Thriveiqsclinicians1_DATA_2023-12-04_1532.csv
+Thriveiqsparents1r1_DATA_2023-12-04_1534.csv
+Traceback (most recent call last):
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 156, in <module>
+    json_score(input_file, json_data, datadict, out_path, tracker)
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 118, in json_score
+    handle = survey_obj.score()
+  File "/home/data/NDClab/tools/instruments/scripts/survey.py", line 178, in score
+    single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
+  File "/home/data/NDClab/tools/instruments/scripts/subscore.py", line 251, in gen_data
+    perc = self.perc_complete(row_set)
+TypeError: perc_complete() missing 1 required positional argument: 'num_qs'
+Traceback (most recent call last):
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 156, in <module>
+    json_score(input_file, json_data, datadict, out_path, tracker)
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 118, in json_score
+    handle = survey_obj.score()
+  File "/home/data/NDClab/tools/instruments/scripts/survey.py", line 178, in score
+    single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
+  File "/home/data/NDClab/tools/instruments/scripts/subscore.py", line 251, in gen_data
+    perc = self.perc_complete(row_set)
+TypeError: perc_complete() missing 1 required positional argument: 'num_qs'
+1001.0 missing in tracker file, skipping
+1001.0 missing in tracker file, skipping
+1001.0 missing in tracker file, skipping
+1002.0 missing in tracker file, skipping
+nan missing in tracker file, skipping
+nan missing in tracker file, skipping
+1001.0 missing in tracker file, skipping
+nan missing in tracker file, skipping
+nan missing in tracker file, skipping
+nan missing in tracker file, skipping
+Success: data tracker updated.
+Success: data tracker updated.
+Traceback (most recent call last):
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 156, in <module>
+    json_score(input_file, json_data, datadict, out_path, tracker)
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 118, in json_score
+    handle = survey_obj.score()
+  File "/home/data/NDClab/tools/instruments/scripts/survey.py", line 178, in score
+    single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
+  File "/home/data/NDClab/tools/instruments/scripts/subscore.py", line 251, in gen_data
+    perc = self.perc_complete(row_set)
+TypeError: perc_complete() missing 1 required positional argument: 'num_qs'
+Traceback (most recent call last):
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 156, in <module>
+    json_score(input_file, json_data, datadict, out_path, tracker)
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 118, in json_score
+    handle = survey_obj.score()
+  File "/home/data/NDClab/tools/instruments/scripts/survey.py", line 178, in score
+    single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
+  File "/home/data/NDClab/tools/instruments/scripts/subscore.py", line 251, in gen_data
+    perc = self.perc_complete(row_set)
+TypeError: perc_complete() missing 1 required positional argument: 'num_qs'
+Traceback (most recent call last):
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 156, in <module>
+    json_score(input_file, json_data, datadict, out_path, tracker)
+  File "/home/data/NDClab/tools/instruments/scripts/json_scorer.py", line 118, in json_score
+    handle = survey_obj.score()
+  File "/home/data/NDClab/tools/instruments/scripts/survey.py", line 178, in score
+    single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
+  File "/home/data/NDClab/tools/instruments/scripts/subscore.py", line 251, in gen_data
+    perc = self.perc_complete(row_set)
+TypeError: perc_complete() missing 1 required positional argument: 'num_qs'
