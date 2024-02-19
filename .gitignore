@@ -14,4 +14,5 @@ data-monitoring/update-tracker.py
 data-monitoring/verify-copy.py
 data-monitoring/check-datadict.py
 data-monitoring/slurm*.out
+data-monitoring/preprocess*.out
 data-monitoring/data-dictionary/central-tracker_datadict_latest.csv
