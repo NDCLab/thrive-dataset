@@ -107,3 +107,21 @@
 2023-12-07_17:26:09 Data monitoring status for job 11641635: error; 4 errors seen, check slurm-11641635_errorlog.out for more info
 2023-12-07_17:28:20 Preprocessing ran: view slurm-11641693.out file to see effects.
 2023-12-07_17:32:17 Preprocessing ran: view slurm-11641747.out file to see effects.
+2023-12-18_12:00:26 Data monitoring status for job 11650934: error; 14 errors seen, check slurm-11650934_errorlog.out for more info
+2023-12-18_12:07:20 Data monitoring status for job 11650936: error; 12 errors seen, check slurm-11650936_errorlog.out for more info
+2024-01-04_16:15:36 Data monitoring status for job 87105: error; 21 errors seen, check slurm-87105_errorlog.out for more info
+2024-01-12_14:00:51 Data monitoring status for job 129162: error; 27 errors seen, check slurm-129162_errorlog.out for more info
+2024-01-12_14:22:36 Data monitoring status for job 129165: error; 27 errors seen, check slurm-129165_errorlog.out for more info
+2024-01-12_14:42:05 Data monitoring status for job 129169: error; 26 errors seen, check slurm-129169_errorlog.out for more info
+2024-01-24_16:48:43 Data monitoring status for job 152775: error; 48 errors seen, check slurm-152775_errorlog.out for more info
+2024-02-08_16:49:23 Data monitoring status for job 180203: error; 47 errors seen, check slurm-180203_errorlog.out for more info
+2024-02-08_16:59:42 Data monitoring status for job 180205: error; 42 errors seen, check slurm-180205_errorlog.out for more info
+2024-02-14_14:02:24 Preprocessing ran: view slurm-196734.out file to see effects.
+2024-02-14_14:03:51 Data monitoring status for job 196733: error; 37 errors seen, check slurm-196733_errorlog.out for more info
+2024-02-15_15:29:22 Preprocessing ran: view slurm-199250.out file to see effects.
+2024-02-16_12:54:00 Preprocessing ran: view slurm-201367.out file to see effects.
+2024-02-19_11:19:21 Data monitoring status for job 201880: error; 85 errors seen, check slurm-201880_errorlog.out for more info
+2024-02-21_14:31:13 Data monitoring status for job 210190: error; 125 errors seen, check slurm-210190_errorlog.out for more info
+2024-02-21_14:37:36 Preprocessing ran: view slurm-210191.out file to see effects.
+2024-02-23_17:38:40 Data monitoring status for job 215703: error; 118 errors seen, check slurm-215703_errorlog.out for more info
+2024-02-23_17:53:20 Preprocessing ran: view slurm-215706.out file to see effects.
