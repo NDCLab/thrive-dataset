@@ -53,6 +53,7 @@ newDat <- read.csv(paste(path,proc_fileName, sep = "/", collapse = NULL))
 ########## RUN THE CODE BELOW If YOU WANT RUN TIMING TEST USING The SOCIAL and NON-SOCIAL Conditions.###################
 ########################################################################################################################
 
+
 flanker_dat <- setNames(data.frame(matrix(ncol = 1)), c("timeDiff")) # creating an empty data frame that will be filled with time difference values!
 dVal <- setNames(data.frame(matrix(ncol = 1)), c("timeDiff"))
 
@@ -128,6 +129,7 @@ practice_dat <- na.omit(practice_dat, na.action = "omit")
 mean(practice_dat$timeDiff)
 sd(practice_dat$timeDiff)
 
+
 ################################################ END of PRACTICE TIMING TEST ###########################################
 ########################################################################################################################
 
@@ -169,6 +171,7 @@ sd(practice_dat$timeDiff)
 #  sd(test$value)
 # 1.575718
 ######## Below is the timing test results for the Flanker task of the thrive study task on April 2, 2023- System 1
+
 # stimulus triggers
 # mean(test$value)
 # 12.775
