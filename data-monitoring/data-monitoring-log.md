@@ -125,6 +125,7 @@
 2024-02-21_14:37:36 Preprocessing ran: view slurm-210191.out file to see effects.
 2024-02-23_17:38:40 Data monitoring status for job 215703: error; 118 errors seen, check slurm-215703_errorlog.out for more info
 2024-02-23_17:53:20 Preprocessing ran: view slurm-215706.out file to see effects.
+<<<<<<< Updated upstream
 2024-02-27_14:11:12 Data monitoring status for job 236770: error; 165 errors seen, check slurm-236770_errorlog.out for more info
 2024-02-27_14:24:57 Preprocessing ran: view slurm-237303.out file to see effects.
 2024-03-01_16:45:58 Data monitoring status for job 274531: error; 149 errors seen, check slurm-274531_errorlog.out for more info
@@ -298,3 +299,8 @@
 2024-08-23_12:31:31 Data monitoring status for job 1386494: error; 34 errors seen, check slurm-1386494_errorlog.out for more info
 2024-08-23_13:39:11 Data monitoring status for job 1386510: success
 2024-08-30_17:06:07 Data monitoring status for job 1419299: error; 7 errors seen, check slurm-1419299_errorlog.out for more info
+=======
+2024-09-13_16:09:28 Data monitoring status for job 1446529: error; 209 errors seen, check slurm-1446529_errorlog.out for more info
+>>>>>>> Stashed changes
+2024-09-20_15:53:53 Data monitoring status for job 1452207: error; 32 errors seen, check slurm-1452207_errorlog.out for more info
+2024-09-27_16:36:20 Data monitoring status for job 1454973: error; 75 errors seen, check slurm-1454973_errorlog.out for more info
