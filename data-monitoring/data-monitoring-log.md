@@ -304,3 +304,8 @@
 >>>>>>> Stashed changes
 2024-09-20_15:53:53 Data monitoring status for job 1452207: error; 32 errors seen, check slurm-1452207_errorlog.out for more info
 2024-09-27_16:36:20 Data monitoring status for job 1454973: error; 75 errors seen, check slurm-1454973_errorlog.out for more info
+2024-10-04_11:34:12 Data monitoring status for job 1483645: error; 39 errors seen, check slurm-1483645_errorlog.out for more info
+2024-10-04_11:40:40 Preprocessing ran: view slurm-1483661.out file to see effects.
+2024-10-04_16:51:47 Data monitoring status for job 1483971: error; 6 errors seen, check slurm-1483971_errorlog.out for more info
+2024-10-11_16:37:29 Data monitoring status for job 1491601: error; 62 errors seen, check slurm-1491601_errorlog.out for more info
+2024-10-11_17:46:53 Data monitoring status for job 1491627: error; 6 errors seen, check slurm-1491627_errorlog.out for more info
