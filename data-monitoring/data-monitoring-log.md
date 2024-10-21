@@ -309,3 +309,5 @@
 2024-10-04_16:51:47 Data monitoring status for job 1483971: error; 6 errors seen, check slurm-1483971_errorlog.out for more info
 2024-10-11_16:37:29 Data monitoring status for job 1491601: error; 62 errors seen, check slurm-1491601_errorlog.out for more info
 2024-10-11_17:46:53 Data monitoring status for job 1491627: error; 6 errors seen, check slurm-1491627_errorlog.out for more info
+2024-10-18_17:30:02 Data monitoring status for job 1498980: error; 18 errors seen, check slurm-1498980_errorlog.out for more info
+2024-10-18_18:03:39 Data monitoring status for job 1499047: error; 6 errors seen, check slurm-1499047_errorlog.out for more info
