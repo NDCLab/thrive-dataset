@@ -4,18 +4,19 @@
 
 % to Run on FIU HPC%
 % create a local cluster object
-%cluster = parcluster('local');
+cluster = parcluster('local');
 
 % start matlabpool with max workers set in the slurm file
-%parpool(cluster, str2num(getenv('SLURM_CPUS_PER_TASK'))) % this should be same as --cpus-per-task
+parpool(cluster, str2num(getenv('SLURM_CPUS_PER_TASK'))) % this should be same as --cpus-per-task
 
 %temp test code; remove
-%pool = gcp('nocreate');  % Get the current parallel pool without creating a new one
-%if isempty(pool)
-%    disp('No parallel pool is currently running.');
-%else
-%    disp(['Parallel pool with ', num2str(pool.NumWorkers), ' workers is running.']);
-%end
+pool = gcp('nocreate');  % Get the current parallel pool without creating a new one
+if isempty(pool)
+    disp('No parallel pool is currently running.');
+else
+    disp(['Parallel pool with ', num2str(pool.NumWorkers), ' workers is running.']);
+end
+
 addpath(genpath('/home/data/NDClab/tools/lab-devOps/scripts/MADE_pipeline_standard/eeg_preprocessing'));% enter the path of the folder in this line
 addpath(genpath('/home/data/NDClab/tools/lab-devOps/scripts/MADE_pipeline_standard/eeglab13_4_4b')); % enter the path of the EEGLAB folder in this line
 rmpath(['/home/data/NDClab/tools/lab-devOps/scripts/MADE_pipeline_standard/eeglab13_4_4b' filesep 'functions' filesep 'octavefunc' filesep 'signal']);
@@ -44,11 +45,13 @@ resp_count_thresh = 500;
 some_trial_count = 100;
 
 % Open a log file for writing
-dfile = sprintf('qa_log_eeg_%s.txt', datestr(now, 'yyyy-mm-dd_HH-MM-SS'));
+dfile = sprintf('qa_log_eeg_%s.txt', datestr(now, 'yyyy_mm_dd_HH_MM_SS'));
 diary(dfile);
 
 % Loop through each subject data path
-for i = 1:length(subject_data_paths)
+parfor i = 1:length(subject_data_paths)
+    all_stim = 0;
+    all_resp = 0;
     stimuli = 0;
     responses = 0;
     sub_path = subject_data_paths{i};
@@ -76,8 +79,11 @@ for i = 1:length(subject_data_paths)
     if length(sub_eeg_files) == 3
         % Initialize found_extensions with False values
         found_extensions = containers.Map('KeyType', 'char', 'ValueType', 'logical');
-        for ext = extensions
-            found_extensions(ext{1}) = false;
+       % for ext = extensions
+       %     found_extensions(ext{1}) = false;
+       % end
+        for j = 1:length(extensions)
+            found_extensions(extensions{j}) = false;
         end
 
         % Check file extensions
@@ -95,23 +101,40 @@ for i = 1:length(subject_data_paths)
             disp(eeg_files)
             if ~isempty(eeg_files)
                 try
+                    %[~] = evalc('EEG = pop_loadbv(eeg_files(1).folder, eeg_files(1).name)');
                     EEG = pop_loadbv(eeg_files(1).folder, eeg_files(1).name);
                     EEG = eeg_checkset(EEG);
                     [EEG, selected_events] = pop_selectevent(EEG, 'type', stim_events);
                     if length(selected_events) >= stim_count_thresh
                         stimuli = 1;
                     elseif length(selected_events) >= some_trial_count & length(selected_events) < stim_count_thresh
-                        fprintf('sub-%s has SOME stimulus events! FAILED!\n', sub);
-                    else    
-                        fprintf('sub-%s has NO stimulus events! FAILED!\n', sub);
+                        if ~deviation
+                            fprintf('sub-%s has SOME stimulus events and no deviation was found! FAILED!\n', sub);
+                        elseif deviation
+                            fprintf('sub-%s has deviation and SOME stimulus events! FAILED!\n', sub);
+                        end
+                    else  
+                        if ~deviation
+                            fprintf('sub-%s has NO stimulus events and no deviation was found! FAILED!\n', sub);
+                        elseif deviation
+                            fprintf('sub-%s has deviation and NO stimulus events! FAILED!\n', sub);
+                        end
                     end
                     [EEG, selected_events] = pop_selectevent(EEG, 'type', resp_events);
                     if length(selected_events) >= resp_count_thresh
                         responses = 1;
                     elseif length(selected_events) >= some_trial_count & length(selected_events) < resp_count_thresh
-                        fprintf('sub-%s has SOME response events! FAILED!\n', sub);
-                    else    
-                        fprintf('sub-%s has NO response events! FAILED!\n', sub);
+                        if ~deviation
+                            fprintf('sub-%s has SOME response events and no deviation was found! FAILED!\n', sub);
+                        elseif deviation
+                            fprintf('sub-%s has deviation and SOME response events! FAILED!\n', sub);
+                        end
+                    else
+                        if ~deviation
+                            fprintf('sub-%s has NO response events and no deviation was found! FAILED!\n', sub);
+                        elseif deviation
+                            fprintf('sub-%s has deviation and NO response events! FAILED!\n', sub);
+                        end
                     end
                 catch ME
                     fprintf('sub-%s FAILED to load! FAILED!\nError message: %s', sub, ME.message);
@@ -138,24 +161,35 @@ for i = 1:length(subject_data_paths)
                 end
             end
             if sub_stim_count >= stim_count_thresh
-                fprintf('sub-%s has deviation but ALL stimulus events! PASSED!\n', sub);
+                all_stim = 1;
+                fprintf('sub-%s has deviation but ALL stimulus events!\n', sub);
             elseif sub_stim_count >= some_trial_count & sub_stim_count < stim_count_thresh
+                all_stim = 0;
                 fprintf('sub-%s has deviation and SOME stimulus events! FAILED!\n', sub);
             else    
                 fprintf('sub-%s has deviation and NO stimulus events! FAILED!\n', sub);
+                all_stim = 0;
             end
             if sub_resp_count >= resp_count_thresh
-                fprintf('sub-%s has deviation but ALL response events! PASSED!\n', sub);
+                all_resp = 1;
+                fprintf('sub-%s has deviation but ALL response events!\n', sub);
             elseif sub_resp_count >= some_trial_count & sub_resp_count < resp_count_thresh
+                all_resp = 0;
                 fprintf('sub-%s has deviation and SOME response events! FAILED!\n', sub);
             else    
+                all_resp = 0;
                 fprintf('sub-%s has deviation and NO response events! FAILED!\n', sub);
             end
         end
     end
     if stimuli == 1 & responses == 1
         fprintf('sub-%s has ALL events! PASSED!\n', sub);
+    elseif all_stim == 1 & all_resp == 1
+        fprintf('sub-%s has ALL events! PASSED!\n', sub);
+    else
+        fprintf('sub-%s does NOT have all events! FAILED!\n', sub);
     end
 end             
 
 diary off
+
