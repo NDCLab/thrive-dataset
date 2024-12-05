@@ -292,10 +292,8 @@ parfor file_locater_counter = 1:length(subjects_to_process) %1:4
                 else
                     [subj, task, sess, desc, ext] = filename_re{1}{:};
                     if length(desc) == 0
-                        %output_report_path = [output_location filesep 'MADE_preprocessing_report_' task '_' sess '.csv'];
                         output_report_path = [output_location filesep 'MADE_preprocessing_report_' task '_' sess];
                     else
-                        %output_report_path = [output_location filesep 'MADE_preprocessing_report_' task '_' sess '_' desc '.csv'];
                         output_report_path = [output_location filesep 'MADE_preprocessing_report_' task '_' sess '_' desc];
                         desc = ['_' desc];
                     end
