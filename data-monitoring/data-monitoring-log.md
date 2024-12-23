@@ -316,3 +316,6 @@
 2024-11-08_20:15:33 Data monitoring status for job 1552430: error; 8 errors seen, check slurm-1552430_errorlog.out for more info
 2024-11-15_17:25:47 Data monitoring status for job 1583971: error; 14 errors seen, check slurm-1583971_errorlog.out for more info
 2024-11-22_17:00:51 Data monitoring status for job 1650922: error; 40 errors seen, check slurm-1650922_errorlog.out for more info
+2024-12-13_12:06:44 Data monitoring status for job 1754536: error; 47 errors seen, check slurm-1754536_errorlog.out for more info
+2024-12-13_12:13:31 Preprocessing ran: view slurm-1754537.out file to see effects.
+2024-12-13_15:59:26 Data monitoring status for job 1755849: error; 9 errors seen, check slurm-1755849_errorlog.out for more info
