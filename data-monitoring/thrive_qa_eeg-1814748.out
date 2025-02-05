@@ -1,0 +1,34 @@
+WARNING: $PATH does not agree with $PATH_modshare counter. The following directories' usage counters were adjusted to match. Note that this may mean that module unloading may not work correctly.
+ /home/share/bin/ /bin/
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 2).
+
+ans = 
+
+ ProcessPool with properties: 
+
+            Connected: true
+           NumWorkers: 2
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Parallel pool with 2 workers is running.
+{Error using thrive_qa_eeg (line 62)
+Error: The temporary variable 'csv_log' must be set before it is used. For more
+information, see Parallel for Loops in MATLAB, "Uninitialized Temporaries".
+} 
+EEG QA exited with errors: {Error using thrive_qa_eeg (line 62)
+Error: The temporary variable 'csv_log' must be set before it is used. For more

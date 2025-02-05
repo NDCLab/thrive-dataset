@@ -5,9 +5,11 @@ from glob import glob
 import re
 from datetime import datetime
 
+r_name = "Felix"
+dtype = "psychopy"
 dataset_path = "/home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/" # mofify if your behavioral data is in another folder
 session = "s1_r1" # modify if using for another session
-subject_data_paths = sorted(glob(f"{dataset_path}sub-*"))
+subject_data_paths = sorted(glob(f"{dataset_path}sub-*/{session}"))
 pattern = r'sub-(\d{7})' # regex to take subject id
 extensions = ['.log', '.csv', '.psydat']
 n_blocks = 20
@@ -15,15 +17,22 @@ n_trials = 40
 all_trial_count = n_blocks * n_trials
 some_trial_count = 100
 
-sys.stdout = open(f"qa_log_behavior_{datetime.now().strftime('%d-%m-%Y_%H_%M_%S')}.txt", "wt") # write a log
-
-for path in subject_data_paths:
+log_name = f"qa_log_behavior_{session}_{datetime.now().strftime('%d-%m-%Y_%H_%M_%S')}"
+sys.stdout = open(f"{log_name}.txt", "wt") # write a log
+csv_log = pd.DataFrame()
+for row_num, path in enumerate(subject_data_paths):
     deviation = 0
     print("")
     sub = re.search(pattern, path).group(1)
     subject_folder = f"{dataset_path}sub-{sub}/{session}/psychopy/"
     sub_psychopy_files = sorted(glob(f"{subject_folder}*"))
-    
+    csv_log.loc[row_num, "name"] = r_name
+    csv_log.loc[row_num, "date"] = datetime.now().strftime('%Y-%m-%d')
+    csv_log.loc[row_num, "sub"] = sub
+    csv_log.loc[row_num, "session"] = session
+    csv_log.loc[row_num, "dtype"] = dtype
+    csv_log.loc[row_num, "fname"] = ""
+
     if "deviation.txt" in os.listdir(subject_folder): # first check if a deviation present
         deviation = 1
         # print(f"sub-{sub} has deviation.txt in their psychopy folder! Check that subject manually!")
@@ -42,18 +51,29 @@ for path in subject_data_paths:
                 psychopy_data = psychopy_data[psychopy_data["conditionText"].isin(["Observed", "Alone"])].reset_index(drop=True) # check num of trials
                 if psychopy_data.shape[0] == all_trial_count:
                     print(f"sub-{sub} has ALL trial data! PASSED!")
+                    csv_log.loc[row_num, "status"] = "PASSED"
                 elif psychopy_data.shape[0] < all_trial_count and psychopy_data.shape[0] > some_trial_count:
                     print(f"sub-{sub} has SOME trial data! FAILED!")
+                    csv_log.loc[row_num, "status"] = "FAILED"
+                    csv_log.loc[row_num, "notes"] = "NO/NOT ENOUGH TRIALS"
                 else:
                     print(f"sub-{sub} has NO trial data! FAILED!")
+                    csv_log.loc[row_num, "status"] = "FAILED"
+                    csv_log.loc[row_num, "notes"] = "NO/NOT ENOUGH TRIALS"
             except:
                 print(f"sub-{sub} file FAILS to load!")
+                csv_log.loc[row_num, "status"] = "FAILED"
+                csv_log.loc[row_num, "notes"] = "FAILS TO LOAD"
         else:
             print(f"sub-{sub} has 3 files BUT not with correct extensions! FAILED!")
+            csv_log.loc[row_num, "status"] = "FAILED"
+            csv_log.loc[row_num, "notes"] = "INCORRECT FILES/EXTENSIONS"
     elif len(sub_psychopy_files) != 3:
         sub_trial_count = 0
         if not deviation: # do not continue if not all files are correct AND no deviation
             print(f"sub-{sub} has incorrect number of files and no deviation was found! FAILED!")
+            csv_log.loc[row_num, "status"] = "FAILED"
+            csv_log.loc[row_num, "notes"] = "INCORRECT FILES/EXTENSIONS"
         elif deviation: # if deviation, try counting all trials from all csvs in the folder
             sub_csv_files = sorted(glob(f"{subject_folder}*.csv"))
             for csv_fname in sub_csv_files:
@@ -68,9 +88,17 @@ for path in subject_data_paths:
                         pass # skip if not task-related csv
                 except:
                     print(f"sub-{sub} has deviation and file FAILS to load!")
+                    csv_log.loc[row_num, "status"] = "FAILED"
+                    csv_log.loc[row_num, "notes"] = "FAILS TO LOAD"
             if sub_trial_count == all_trial_count:
                 print(f"sub-{sub} has deviation but ALL trial data! PASSED!")
+                csv_log.loc[row_num, "status"] = "PASSED"
             elif sub_trial_count < all_trial_count and sub_trial_count > some_trial_count:
                 print(f"sub-{sub} has deviation and SOME trial data! FAILED!")
+                csv_log.loc[row_num, "status"] = "FAILED"
+                csv_log.loc[row_num, "notes"] = "NO/NOT ENOUGH TRIALS"
             else:
                 print(f"sub-{sub} has deviation and NO trial data! FAILED!")
+                csv_log.loc[row_num, "status"] = "FAILED"
+                csv_log.loc[row_num, "notes"] = "NO/NOT ENOUGH TRIALS"
+csv_log.to_csv(f"{log_name}.csv", index=False)

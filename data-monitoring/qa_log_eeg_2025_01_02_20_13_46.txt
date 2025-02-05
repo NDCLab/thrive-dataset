@@ -1,0 +1,4 @@
+{Error using thrive_qa_eeg (line 62)
+Error: The temporary variable 'csv_log' must be set before it is used. For more
+information, see Parallel for Loops in MATLAB, "Uninitialized Temporaries".
+} 
