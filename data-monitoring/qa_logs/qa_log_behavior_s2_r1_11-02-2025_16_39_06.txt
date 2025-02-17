@@ -1,0 +1,130 @@
+
+sub-3000001 has ALL trial data! PASSED!
+
+sub-3000002 has ALL trial data! PASSED!
+
+sub-3000003 has ALL trial data! PASSED!
+
+sub-3000004 has ALL trial data! PASSED!
+
+sub-3000005 has ALL trial data! PASSED!
+
+sub-3000006 has ALL trial data! PASSED!
+
+sub-3000008 has ALL trial data! PASSED!
+
+sub-3000010 has ALL trial data! PASSED!
+
+sub-3000011 has ALL trial data! PASSED!
+
+sub-3000012 has ALL trial data! PASSED!
+
+sub-3000013 has ALL trial data! PASSED!
+
+sub-3000014 has ALL trial data! PASSED!
+
+sub-3000015 has ALL trial data! PASSED!
+
+sub-3000019 has ALL trial data! PASSED!
+
+sub-3000020 has ALL trial data! PASSED!
+
+sub-3000021 has ALL trial data! PASSED!
+
+sub-3000022 has ALL trial data! PASSED!
+
+sub-3000023 has ALL trial data! PASSED!
+
+sub-3000026 has ALL trial data! PASSED!
+
+sub-3000028 has ALL trial data! PASSED!
+
+sub-3000030 has ALL trial data! PASSED!
+
+sub-3000031 has ALL trial data! PASSED!
+
+sub-3000032 has ALL trial data! PASSED!
+
+sub-3000033 has ALL trial data! PASSED!
+
+sub-3000034 has ALL trial data! PASSED!
+
+sub-3000039 has ALL trial data! PASSED!
+
+sub-3000041 has ALL trial data! PASSED!
+
+sub-3000044 has ALL trial data! PASSED!
+
+sub-3000045 has ALL trial data! PASSED!
+
+sub-3000046 has ALL trial data! PASSED!
+
+sub-3000047 has ALL trial data! PASSED!
+
+sub-3000048 has ALL trial data! PASSED!
+
+sub-3000049 has ALL trial data! PASSED!
+
+sub-3000050 has ALL trial data! PASSED!
+
+sub-3000053 has ALL trial data! PASSED!
+
+sub-3000054 has ALL trial data! PASSED!
+
+sub-3000056 has deviation and SOME trial data! FAILED!
+
+sub-3000058 has ALL trial data! PASSED!
+
+sub-3000060 has ALL trial data! PASSED!
+
+sub-3000062 has ALL trial data! PASSED!
+
+sub-3000064 has ALL trial data! PASSED!
+
+sub-3000067 has ALL trial data! PASSED!
+
+sub-3000071 has ALL trial data! PASSED!
+
+sub-3000073 has ALL trial data! PASSED!
+
+sub-3000074 has ALL trial data! PASSED!
+
+sub-3000077 has ALL trial data! PASSED!
+
+sub-3000079 has ALL trial data! PASSED!
+
+sub-3000080 has ALL trial data! PASSED!
+
+sub-3000081 has ALL trial data! PASSED!
+
+sub-3000083 has ALL trial data! PASSED!
+
+sub-3000084 has ALL trial data! PASSED!
+
+sub-3000086 has ALL trial data! PASSED!
+
+sub-3000087 has ALL trial data! PASSED!
+
+sub-3000088 has ALL trial data! PASSED!
+
+sub-3000093 has ALL trial data! PASSED!
+
+sub-3000097 has ALL trial data! PASSED!
+
+sub-3000100 has ALL trial data! PASSED!
+
+sub-3000101 has ALL trial data! PASSED!
+
+sub-3000102 has ALL trial data! PASSED!
+
+sub-3000105 has ALL trial data! PASSED!
+
+sub-3000106 has ALL trial data! PASSED!
+
+sub-3000110 has ALL trial data! PASSED!
+
+sub-3000113 has ALL trial data! PASSED!
+
+sub-3000116 has ALL trial data! PASSED!
+
+sub-3000119 has ALL trial data! PASSED!

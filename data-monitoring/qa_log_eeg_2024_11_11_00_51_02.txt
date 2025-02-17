@@ -1,5 +1,0 @@
-{Error using thrive_qa_eeg (line 52)
-Error: Assigning to the for-loop variable 'ext' is not supported in
-parfor-loops. For more information, see Parallel for Loops in MATLAB, "Nested
-for-Loops: Requirements and Limitations".
-} 

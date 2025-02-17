@@ -1,2 +1,0 @@
-
-sub-3000001 has ALL trial data! PASSED!

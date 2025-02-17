@@ -9,9 +9,11 @@
 #SBATCH --account=acc_gbuzzell
 #SBATCH --output=%x-%j.out
 #SBATCH --mail-type=end          # send email when job ends
-#SBATCH --mail-user=fzaki001@fiu.edu
+#SBATCH --mail-user=llaplace@fiu.edu
 
-python3 thrive_qa_behavior.py
+module load singularity-3.8.2
+
+singularity exec --bind /home/data/NDClab /home/data/NDClab/tools/containers/python-3.8/python-3.8.simg python3 thrive_qa_behavior.py
 
 errors=$(cat ${SLURM_JOB_NAME}-${SLURM_JOB_ID}.out | grep "Error")
 if [[ -z ${errors} ]]; then

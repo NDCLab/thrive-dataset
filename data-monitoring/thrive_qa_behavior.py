@@ -5,10 +5,10 @@ from glob import glob
 import re
 from datetime import datetime
 
-r_name = "Felix"
+r_name = "Lilly"
 dtype = "psychopy"
 dataset_path = "/home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/" # mofify if your behavioral data is in another folder
-session = "s1_r1" # modify if using for another session
+session = "s2_r1" # modify if using for another session
 subject_data_paths = sorted(glob(f"{dataset_path}sub-*/{session}"))
 pattern = r'sub-(\d{7})' # regex to take subject id
 extensions = ['.log', '.csv', '.psydat']
@@ -17,7 +17,7 @@ n_trials = 40
 all_trial_count = n_blocks * n_trials
 some_trial_count = 100
 
-log_name = f"qa_log_behavior_{session}_{datetime.now().strftime('%d-%m-%Y_%H_%M_%S')}"
+log_name = f"qa_logs/qa_log_behavior_{session}_{datetime.now().strftime('%d-%m-%Y_%H_%M_%S')}"
 sys.stdout = open(f"{log_name}.txt", "wt") # write a log
 csv_log = pd.DataFrame()
 for row_num, path in enumerate(subject_data_paths):
@@ -33,10 +33,19 @@ for row_num, path in enumerate(subject_data_paths):
     csv_log.loc[row_num, "dtype"] = dtype
     csv_log.loc[row_num, "fname"] = ""
 
+    if len(os.listdir(subject_folder)) > 0:
+        if any(["no-data.txt" in i for i in os.listdir(subject_folder)]): # first check if a deviation present
+            no_data = 1
+            print(f"sub-{sub} has NO DATA! FAILED!")
+            csv_log.loc[row_num, "status"] = "FAILED"
+            csv_log.loc[row_num, "notes"] = "NO DATA"
+            continue
     if "deviation.txt" in os.listdir(subject_folder): # first check if a deviation present
         deviation = 1
-        # print(f"sub-{sub} has deviation.txt in their psychopy folder! Check that subject manually!")
-    
+
+    sub_psychopy_output_files = [i.split("/")[-1] for i in sub_psychopy_files if (".csv" in i or ".psydat" in i or ".log" in i)]
+    csv_log.loc[row_num, "fname"] = ",".join(sub_psychopy_output_files)    
+
     if len(sub_psychopy_files) == 3: # best case scenario if only 3 files are present
         found_extensions = {ext: False for ext in extensions}
         for psychopy_file in sub_psychopy_files:
@@ -46,8 +55,8 @@ for row_num, path in enumerate(subject_data_paths):
         if sum([item[1] for item in list(found_extensions.items())]) == 3: # ideal case, all 3 files are correct extension
             try:
                 psychopy_data = pd.read_csv(glob(f"{subject_folder}*.csv")[0])
-                start_index = psychopy_data["task_blockText.started"].first_valid_index()
-                psychopy_data = psychopy_data.iloc[start_index:, :].dropna(subset = "middleStim")
+                start_index = psychopy_data.loc[:, "task_blockText.started"].first_valid_index()
+                psychopy_data = psychopy_data.iloc[start_index:, :].dropna(subset = ["middleStim"])
                 psychopy_data = psychopy_data[psychopy_data["conditionText"].isin(["Observed", "Alone"])].reset_index(drop=True) # check num of trials
                 if psychopy_data.shape[0] == all_trial_count:
                     print(f"sub-{sub} has ALL trial data! PASSED!")
@@ -80,8 +89,8 @@ for row_num, path in enumerate(subject_data_paths):
                 try:
                     psychopy_data = pd.read_csv(csv_fname)
                     if "task_blockText.started" in list(psychopy_data.columns): # count trials from only task-related csv
-                        start_index = psychopy_data["task_blockText.started"].first_valid_index()
-                        psychopy_data = psychopy_data.iloc[start_index:, :].dropna(subset = "middleStim")
+                        start_index = psychopy_data.loc[:, "task_blockText.started"].first_valid_index()
+                        psychopy_data = psychopy_data.iloc[start_index:, :].dropna(subset = ["middleStim"])
                         psychopy_data = psychopy_data[psychopy_data["conditionText"].isin(["Observed", "Alone"])].reset_index(drop=True) # check num of trials
                         sub_trial_count += psychopy_data.shape[0]
                     else:

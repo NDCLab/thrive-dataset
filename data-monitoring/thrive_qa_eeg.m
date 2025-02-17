@@ -21,10 +21,10 @@ addpath(genpath('/home/data/NDClab/tools/lab-devOps/scripts/MADE_pipeline_standa
 rmpath(['/home/data/NDClab/tools/lab-devOps/scripts/MADE_pipeline_standard/eeglab13_4_4b' filesep 'functions' filesep 'octavefunc' filesep 'signal']);
 
 % Define the dataset path and session
-r_name = 'Felix';
+r_name = 'Lilly';
 dtype = 'eeg';
 dataset_path = '/home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/'; % Modify if your behavioral data is in another folder
-session = 's1_r1'; % Modify if using for another session
+session = 's2_r1'; % Modify if using for another session
 % Get the list of subject data paths
 subject_data_paths = dir(fullfile(dataset_path, 'sub-*/', session));
 to_remove = ismember({subject_data_paths.name}, {'.', '..','.DS_Store'});
@@ -74,8 +74,8 @@ notes_array = strings(length(subject_data_paths), 1);
 
 
 datetime_str = datestr(now, 'yyyy_mm_dd_HH_MM_SS');
-csv_file = sprintf('qa_log_eeg_%s_%s.csv', session, datetime_str);
-dfile = sprintf('qa_log_eeg_%s_%s.txt', session, datetime_str);
+csv_file = sprintf('qa_logs/qa_log_eeg_%s_%s.csv', session, datetime_str);
+dfile = sprintf('qa_logs/qa_log_eeg_%s_%s.txt', session, datetime_str);
 diary(dfile);
 
 % Loop through each subject data path
@@ -87,6 +87,7 @@ parfor i = 1:length(subject_data_paths)
     sub_path = subject_data_paths{i};
     disp(sub_path);
     deviation = 0;
+    no_data = 0;
     fprintf('\n');
 
     % Extract the subject ID using the pattern
@@ -97,7 +98,7 @@ parfor i = 1:length(subject_data_paths)
     sub_array(i) = sub;
     session_array(i) = session;
     dtype_array(i) = dtype;
-    %fname_array(i) = '';
+    fname_array(i) = fname_filler;
     % Define the subject folder path
     subject_folder = fullfile(dataset_path, sprintf('sub-%s/%s/eeg/', sub, session));
 
@@ -111,6 +112,36 @@ parfor i = 1:length(subject_data_paths)
     if any(strcmp('deviation.txt', sub_eeg_files))
         deviation = 1;
     end
+    if any(strcmp('no-data.txt', sub_eeg_files))
+        no_data = 1;
+        fprintf('sub-%s has NO DATA! FAILED!\n', sub);
+        status_array(i) = 'FAILED';
+        notes_array(i) = 'NO DATA';
+        continue;
+    end
+
+    % Define the file patterns for the different file types
+    eeg_file_patterns = {'*.vhdr', '*.eeg', '*.vmrk'};
+
+    % Initialize an empty cell array to store the filenames
+    all_eeg_files = {};
+
+    % Loop through each file pattern and collect the filenames
+    for f = 1:length(eeg_file_patterns)
+        files = dir(fullfile(subject_folder, eeg_file_patterns{f}));
+        if ~isempty(files)
+            % Extract the filenames and add them to the cell array
+            filenames = {files.name};
+            all_eeg_files = [all_eeg_files, filenames];
+        end
+    end
+
+    % Concatenate the filenames into a single string separated by commas
+    if ~isempty(all_eeg_files)
+        filenames_string = strjoin(all_eeg_files, ', ');
+        fname_array(i) = filenames_string
+    end
+
     if length(sub_eeg_files) == 3
         % Initialize found_extensions with False values
         found_extensions = containers.Map('KeyType', 'char', 'ValueType', 'logical');
@@ -130,8 +161,9 @@ parfor i = 1:length(subject_data_paths)
         if sum(cell2mat(found_extensions.values)) == 3
             % Read EEG file
             eeg_files = dir(fullfile(subject_folder, '*.vhdr'));
-            disp(eeg_files)
+            disp(eeg_files);
             if ~isempty(eeg_files)
+                %fname_array(i) = strjoin({eeg_files.name}, ', ');
                 try
                     %[~] = evalc('EEG = pop_loadbv(eeg_files(1).folder, eeg_files(1).name)');
                     EEG = pop_loadbv(eeg_files(1).folder, eeg_files(1).name);
