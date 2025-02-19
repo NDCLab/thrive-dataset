@@ -319,3 +319,6 @@
 2024-12-13_12:06:44 Data monitoring status for job 1754536: error; 47 errors seen, check slurm-1754536_errorlog.out for more info
 2024-12-13_12:13:31 Preprocessing ran: view slurm-1754537.out file to see effects.
 2024-12-13_15:59:26 Data monitoring status for job 1755849: error; 9 errors seen, check slurm-1755849_errorlog.out for more info
+2025-02-17_17:23:08 Preprocessing ran: view slurm-1960972.out file to see effects.
+2025-02-17_17:24:57 Preprocessing ran: view slurm-1960971.out file to see effects.
+2025-02-19_11:23:42 Preprocessing ran: view slurm-1966979.out file to see effects.
