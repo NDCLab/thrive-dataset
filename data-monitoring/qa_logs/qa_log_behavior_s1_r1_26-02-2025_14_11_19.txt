@@ -1,0 +1,34 @@
+
+sub-3000008 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000124 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000231 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000232 has NO DATA! FAILED!
+
+sub-3000240 has NO DATA! FAILED!
+
+sub-3000242 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000256 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000259 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000260 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000261 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000263 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000264 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000265 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000266 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000267 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000269 has incorrect number of files and no deviation was found! FAILED!
+
+sub-3000277 has incorrect number of files and no deviation was found! FAILED!

@@ -8,7 +8,7 @@ from datetime import datetime
 r_name = "Lilly"
 dtype = "psychopy"
 dataset_path = "/home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/" # mofify if your behavioral data is in another folder
-session = "s2_r1" # modify if using for another session
+session = "s1_r1" # modify if using for another session
 subject_data_paths = sorted(glob(f"{dataset_path}sub-*/{session}"))
 pattern = r'sub-(\d{7})' # regex to take subject id
 extensions = ['.log', '.csv', '.psydat']
@@ -34,13 +34,13 @@ for row_num, path in enumerate(subject_data_paths):
     csv_log.loc[row_num, "fname"] = ""
 
     if len(os.listdir(subject_folder)) > 0:
-        if any(["no-data.txt" in i for i in os.listdir(subject_folder)]): # first check if a deviation present
+        if any(["no-data" in i for i in os.listdir(subject_folder)]): # first check if a deviation present
             no_data = 1
             print(f"sub-{sub} has NO DATA! FAILED!")
             csv_log.loc[row_num, "status"] = "FAILED"
             csv_log.loc[row_num, "notes"] = "NO DATA"
             continue
-    if "deviation.txt" in os.listdir(subject_folder): # first check if a deviation present
+    if any(["deviation" in i for i in os.listdir(subject_folder)]): # first check if a deviation present
         deviation = 1
 
     sub_psychopy_output_files = [i.split("/")[-1] for i in sub_psychopy_files if (".csv" in i or ".psydat" in i or ".log" in i)]

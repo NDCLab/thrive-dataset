@@ -109,10 +109,10 @@ parfor i = 1:length(subject_data_paths)
     sub_eeg_files = sort(sub_eeg_files);
 
     % Check if a deviation.txt file is present in the subject folder
-    if any(strcmp('deviation.txt', sub_eeg_files))
+    if any(contains(sub_eeg_files, 'deviation.txt'))
         deviation = 1;
     end
-    if any(strcmp('no-data.txt', sub_eeg_files))
+    if any(contains(sub_eeg_files, 'no-data.txt'))
         no_data = 1;
         fprintf('sub-%s has NO DATA! FAILED!\n', sub);
         status_array(i) = 'FAILED';

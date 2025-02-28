@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --job-name=thrive_qa_behavior         # create a short name for your job
+#SBATCH --nodes=1                # node count
+#SBATCH --ntasks=1               # total number of tasks across all nodes
+#SBATCH --cpus-per-task=2
+#SBATCH --time=1000:00:00          # total run time limit (HH:MM:SS)
+#SBATCH --mem=20G
+#SBATCH --partition=default-alternate
+#SBATCH --account=acc_gbuzzell
+#SBATCH --output=%x-%j.out
+#SBATCH --mail-type=end          # send email when job ends
+#SBATCH --mail-user=llaplace@fiu.edu
+
+module load singularity-3.8.2
+
+singularity exec --bind /home/data/NDClab /home/data/NDClab/tools/containers/python-3.8/python-3.8.simg python3 thrive_qa_behavior_pending.py
+
+errors=$(cat ${SLURM_JOB_NAME}-${SLURM_JOB_ID}.out | grep "Error")
+if [[ -z ${errors} ]]; then
+    echo "Behavior QA complete."
+else
+    echo "Behavior QA exited with errors: ${errors}"
+fi
+

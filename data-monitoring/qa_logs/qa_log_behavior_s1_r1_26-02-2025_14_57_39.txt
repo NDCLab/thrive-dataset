@@ -1,0 +1,51 @@
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000008/sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000008/sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000008/sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1.psydat', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000008/sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1_deviation.txt', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000008/sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1_practice-only.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000008/sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1_practice-only.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000008/sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1_practice-only.psydat']
+sub-3000008 has incorrect number of files and no deviation was found! FAILED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000124/sub-3000124_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000124/sub-3000124_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000124/sub-3000124_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000124 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000231/sub-3000231_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000231/sub-3000231_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000231/sub-3000231_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000231 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000232/sub-3000232_arrow-alert-v1-2_psychopy_s1_r1_e1_no-data.txt']
+sub-3000232 has NO DATA! FAILED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000240/sub-3000240_arrow-alert-v1-2_psychopy_s1_r1_e1_no-data.txt']
+sub-3000240 has NO DATA! FAILED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000242/sub-3000242_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000242/sub-3000242_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000242/sub-3000242_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000242 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000256/sub-3000256_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000256/sub-3000256_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000256/sub-3000256_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000256 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000259/sub-3000259_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000259/sub-3000259_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000259/sub-3000259_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000259 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000260/sub-3000260_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000260/sub-3000260_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000260/sub-3000260_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000260 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000261/sub-3000261_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000261/sub-3000261_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000261/sub-3000261_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000261 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000263/sub-3000263_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000263/sub-3000263_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000263/sub-3000263_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000263 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000264/sub-3000264_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000264/sub-3000264_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000264/sub-3000264_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000264/sub-3000264_arrow-alert-v1-2_psychopy_s1_r1_e1_deviation.txt']
+sub-3000264 has incorrect number of files and no deviation was found! FAILED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000265/sub-3000265_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000265/sub-3000265_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000265/sub-3000265_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000265 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000266/sub-3000266_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000266/sub-3000266_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000266/sub-3000266_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000266 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000267/sub-3000267_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000267/sub-3000267_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000267/sub-3000267_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000267 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000269/sub-3000269_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000269/sub-3000269_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000269/sub-3000269_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000269 has ALL trial data! PASSED!
+
+['/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000277/sub-3000277_arrow-alert-v1-2_psychopy_s1_r1_e1.csv', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000277/sub-3000277_arrow-alert-v1-2_psychopy_s1_r1_e1.log', '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/psychopy/sub-3000277/sub-3000277_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat']
+sub-3000277 has ALL trial data! PASSED!

@@ -1,5 +1,0 @@
-Metadata-Version: 2.2
-Name: hallmonitor
-Version: 2.0.0
-Requires-Dist: pytest
-Dynamic: requires-dist

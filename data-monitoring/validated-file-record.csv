@@ -1188,3 +1188,4 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000255_all_eeg_s1_r1_e1,sub-3000255,eeg,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000255_all_zoom_s1_r1_e1,sub-3000255,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000255_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000255,psychopy,0,s1_r1_e1
+2025-02-19_12-52,llaplace,sub-3000013_all_eeg_s1_r1_e1,3000013,eeg,0,s1_r1

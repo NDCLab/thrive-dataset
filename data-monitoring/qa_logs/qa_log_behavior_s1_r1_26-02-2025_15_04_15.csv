@@ -1,0 +1,18 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-02-26,3000008,s1_r1,psychopy,"sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1.csv,sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1.log,sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1.psydat,sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1_practice-only.csv,sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1_practice-only.log,sub-3000008_arrow-alert-v1-1_psychopy_s1_r1_e1_practice-only.psydat",PASSED,
+Lilly,2025-02-26,3000124,s1_r1,psychopy,"sub-3000124_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000124_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000124_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000231,s1_r1,psychopy,"sub-3000231_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000231_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000231_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000232,s1_r1,psychopy,,FAILED,NO DATA
+Lilly,2025-02-26,3000240,s1_r1,psychopy,,FAILED,NO DATA
+Lilly,2025-02-26,3000242,s1_r1,psychopy,"sub-3000242_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000242_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000242_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000256,s1_r1,psychopy,"sub-3000256_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000256_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000256_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000259,s1_r1,psychopy,"sub-3000259_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000259_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000259_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000260,s1_r1,psychopy,"sub-3000260_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000260_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000260_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000261,s1_r1,psychopy,"sub-3000261_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000261_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000261_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000263,s1_r1,psychopy,"sub-3000263_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000263_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000263_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000264,s1_r1,psychopy,"sub-3000264_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000264_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000264_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",FAILED,NO/NOT ENOUGH TRIALS
+Lilly,2025-02-26,3000265,s1_r1,psychopy,"sub-3000265_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000265_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000265_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000266,s1_r1,psychopy,"sub-3000266_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000266_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000266_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000267,s1_r1,psychopy,"sub-3000267_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000267_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000267_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000269,s1_r1,psychopy,"sub-3000269_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000269_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000269_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
+Lilly,2025-02-26,3000277,s1_r1,psychopy,"sub-3000277_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000277_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000277_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED,
