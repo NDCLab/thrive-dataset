@@ -1,0 +1,52 @@
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000002
+
+sub-3000002 has incorrect number of files and no deviation was found! FAILED!
+sub-3000002 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000019
+
+sub-3000019 has incorrect number of files and no deviation was found! FAILED!
+sub-3000019 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000003
+
+sub-3000003 has incorrect number of files and no deviation was found! FAILED!
+sub-3000003 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000020
+
+sub-3000020 has incorrect number of files and no deviation was found! FAILED!
+sub-3000020 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000004
+
+sub-3000004 has incorrect number of files and no deviation was found! FAILED!
+sub-3000004 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000022
+
+sub-3000022 has incorrect number of files and no deviation was found! FAILED!
+sub-3000022 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000005
+
+sub-3000005 has incorrect number of files and no deviation was found! FAILED!
+sub-3000005 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000006
+
+sub-3000006 has incorrect number of files and no deviation was found! FAILED!
+sub-3000006 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000008
+
+sub-3000008 has incorrect number of files and no deviation was found! FAILED!
+sub-3000008 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000010
+
+sub-3000010 has incorrect number of files and no deviation was found! FAILED!
+sub-3000010 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000011
+
+sub-3000011 has incorrect number of files and no deviation was found! FAILED!
+sub-3000011 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000012
+
+sub-3000012 has incorrect number of files and no deviation was found! FAILED!
+sub-3000012 does NOT have all events! FAILED!
+/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000015
+
+sub-3000015 has incorrect number of files and no deviation was found! FAILED!
+sub-3000015 does NOT have all events! FAILED!

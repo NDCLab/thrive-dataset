@@ -28,7 +28,7 @@ rmpath(['/home/data/NDClab/tools/lab-devOps/scripts/MADE_pipeline_standard/eegla
 r_name = 'Lilly';
 dtype = 'eeg';
 dataset_path = '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/'; % Modify if your behavioral data is in another folder
-session = 's2_r1'; % Modify if using for another session
+session = 's1_r1'; % Modify if using for another session
 % Get the list of subject data paths
 subject_data_paths = dir(fullfile(dataset_path, session, dtype, 'sub-*/'));
 to_remove = ismember({subject_data_paths.name}, {'.', '..','.DS_Store'});
@@ -89,10 +89,9 @@ parfor i = 1:length(subject_data_paths)
     stimuli = 0;
     responses = 0;
     sub_path = subject_data_paths{i};
-    disp(sub_path);
+    disp("Subject path: " + sub_path);
     deviation = 0;
     no_data = 0;
-    fprintf('\n');
 
     % Extract the subject ID using the pattern
     sub = regexp(sub_path, pattern, 'tokens');
@@ -103,11 +102,9 @@ parfor i = 1:length(subject_data_paths)
     session_array(i) = session;
     dtype_array(i) = dtype;
     fname_array(i) = fname_filler;
-    % Define the subject folder path
-    subject_folder = fullfile(dataset_path, sub_path);
 
     % Get the list of psychopy files in the subject folder
-    sub_eeg_files = dir(fullfile(subject_folder, '*'));
+    sub_eeg_files = dir(fullfile(sub_path, '*'));
     sub_eeg_files = {sub_eeg_files.name};
     sub_eeg_files = sub_eeg_files(~ismember(sub_eeg_files, {'.', '..','.DS_Store'}));
     sub_eeg_files = sort(sub_eeg_files);
@@ -132,7 +129,7 @@ parfor i = 1:length(subject_data_paths)
 
     % Loop through each file pattern and collect the filenames
     for f = 1:length(eeg_file_patterns)
-        files = dir(fullfile(subject_folder, eeg_file_patterns{f}));
+        files = dir(fullfile(sub_path, eeg_file_patterns{f}));
         if ~isempty(files)
             % Extract the filenames and add them to the cell array
             filenames = {files.name};
@@ -164,7 +161,7 @@ parfor i = 1:length(subject_data_paths)
         % Check if all 3 extensions are found
         if sum(cell2mat(found_extensions.values)) == 3
             % Read EEG file
-            eeg_files = dir(fullfile(subject_folder, '*.vhdr'));
+            eeg_files = dir(fullfile(sub_path, '*.vhdr'));
             disp(eeg_files);
             if ~isempty(eeg_files)
                 %fname_array(i) = strjoin({eeg_files.name}, ', ');
@@ -235,7 +232,7 @@ parfor i = 1:length(subject_data_paths)
             status_array(i) = 'FAILED';
             notes_array(i) = 'INCORRECT FILES/EXTENSIONS';
         elseif deviation
-            eeg_files = dir(fullfile(subject_folder, '*.vhdr'));
+            eeg_files = dir(fullfile(sub_path, '*.vhdr'));
             for l = 1:length(eeg_files)
                 try
                     EEG = pop_loadbv(eeg_files(l).folder, eeg_files(l).name);

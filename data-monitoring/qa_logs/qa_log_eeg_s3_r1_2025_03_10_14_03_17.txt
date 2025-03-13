@@ -1,0 +1,5 @@
+{Error using thrive_qa_eeg_pending (line 86)
+Error: Using break statements to terminate the execution of a parfor-loop is
+not supported. For more information, see Parallel for Loops in MATLAB, "break
+and return Statements".
+} 

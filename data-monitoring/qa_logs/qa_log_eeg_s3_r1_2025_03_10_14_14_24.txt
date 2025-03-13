@@ -1,0 +1,13 @@
+Analyzing and transferring files to the workers ...done.
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000012
+{Error using thrive_qa_eeg_pending (line 86)
+The source code
+(/home/data/NDClab/datasets/thrive-dataset/data-monitoring/thrive_qa_eeg_pending.m)
+for the parfor-loop that is trying to execute on the worker could not be found.
+
+Caused by:
+    Unrecognized function or variable 'subject_folder'.
+    Error using remoteParallelFunction (line 94)
+    Worker unable to find file.
+        Unrecognized function or variable 'subject_folder'.
+} 

@@ -1,0 +1,53 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000002
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000019
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000003
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000020
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000004
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000022
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000005
+  Columns 1 through 3
+
+    "Subject EEG file..."    "Subject EEG file..."    "Subject EEG file..."
+
+  Columns 4 through 6
+
+    "Subject EEG file..."    "Subject EEG file..."    "Subject EEG file..."
+
+  Columns 7 through 9
+
+    "Subject EEG file..."    "Subject EEG file..."    "Subject EEG file..."
+
+  Column 10
+
+    "Subject EEG file..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000006
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000008
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000010
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000011
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000012
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000015
+    "Subject EEG files..."    "Subject EEG files..."    "Subject EEG files..."
+

@@ -1,0 +1,14 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-03-10,3000002,s3_r1,eeg,"sub-3000002_all_eeg_s3_r1_e1.vhdr, sub-3000002_all_eeg_s3_r1_e1.eeg, sub-3000002_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000003,s3_r1,eeg,"sub-3000003_all_eeg_s3_r1_e1.vhdr, sub-3000003_all_eeg_s3_r1_e1.eeg, sub-3000003_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000004,s3_r1,eeg,"sub-3000004_all_eeg_s3_r1_e1.vhdr, sub-3000004_all_eeg_s3_r1_e1.eeg, sub-3000004_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000005,s3_r1,eeg,"sub-3000005_all_eeg_s3_r1_e1_alone-flanker-block-seven-through-observed-condition-only.vhdr, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-blocks-five-to-six-only.vhdr, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-blocks-one-to-four-only.vhdr, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-block-seven-through-observed-condition-only.eeg, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-blocks-five-to-six-only.eeg, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-blocks-one-to-four-only.eeg, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-block-seven-through-observed-condition-only.vmrk, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-blocks-five-to-six-only.vmrk, sub-3000005_all_eeg_s3_r1_e1_alone-flanker-blocks-one-to-four-only.vmrk",FAILED,NO/NOT ENOUGH EVENTS
+Lilly,2025-03-10,3000006,s3_r1,eeg,"sub-3000006_all_eeg_s3_r1_e1.vhdr, sub-3000006_all_eeg_s3_r1_e1.eeg, sub-3000006_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000008,s3_r1,eeg,"sub-3000008_all_eeg_s3_r1_e1.vhdr, sub-3000008_all_eeg_s3_r1_e1.eeg, sub-3000008_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000010,s3_r1,eeg,"sub-3000010_all_eeg_s3_r1_e1.vhdr, sub-3000010_all_eeg_s3_r1_e1.eeg, sub-3000010_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000011,s3_r1,eeg,"sub-3000011_all_eeg_s3_r1_e1.vhdr, sub-3000011_all_eeg_s3_r1_e1.eeg, sub-3000011_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000012,s3_r1,eeg,"sub-3000012_all_eeg_s3_r1_e1.vhdr, sub-3000012_all_eeg_s3_r1_e1.eeg, sub-3000012_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000015,s3_r1,eeg,"sub-3000015_all_eeg_s3_r1_e1.vhdr, sub-3000015_all_eeg_s3_r1_e1.eeg, sub-3000015_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000019,s3_r1,eeg,"sub-3000019_all_eeg_s3_r1_e1.vhdr, sub-3000019_all_eeg_s3_r1_e1.eeg, sub-3000019_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000020,s3_r1,eeg,"sub-3000020_all_eeg_s3_r1_e1.vhdr, sub-3000020_all_eeg_s3_r1_e1.eeg, sub-3000020_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-03-10,3000022,s3_r1,eeg,"sub-3000022_all_eeg_s3_r1_e1.vhdr, sub-3000022_all_eeg_s3_r1_e1.eeg, sub-3000022_all_eeg_s3_r1_e1.vmrk",PASSED,
