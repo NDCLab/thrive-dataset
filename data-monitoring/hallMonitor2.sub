@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --time=00:5:00
-#SBATCH --account=acc_gbuzzell
-#SBATCH --partition=default-alternate
+#SBATCH --time=00:10:00
+#SBATCH --account=iacc_gbuzzell
+#SBATCH --partition=highmem1
 
 SINGULARITY_VERSION="3.8.2"
-HM_CONTAINER="/home/data/NDClab/tools/containers/hallMonitor2/hm2_0-2-1.sif"
+HM_CONTAINER="/home/data/NDClab/tools/containers/hallMonitor2/hm2_0-3-11.sif"
 DATASET="/home/data/NDClab/datasets/thrive-dataset"
 
 module load "singularity-$SINGULARITY_VERSION"

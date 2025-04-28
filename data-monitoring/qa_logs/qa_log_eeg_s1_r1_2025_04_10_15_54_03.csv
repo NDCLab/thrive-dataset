@@ -1,0 +1,3 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-04-10,3000295,s1_r1,eeg,"sub-3000295_all_eeg_s1_r1_e1.vhdr, sub-3000295_all_eeg_s1_r1_e1.eeg, sub-3000295_all_eeg_s1_r1_e1.vmrk",FAILED,NO/NOT ENOUGH EVENTS
+Lilly,2025-04-10,3000300,s1_r1,eeg,"sub-3000300_all_eeg_s1_r1_e1.vhdr, sub-3000300_all_eeg_s1_r1_e1.eeg, sub-3000300_all_eeg_s1_r1_e1.vmrk",PASSED,

@@ -1,0 +1,11 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-03-20,3000215,s1_r1,eeg,"sub-3000215_all_eeg_s1_r1_e1_before-social.vhdr, sub-3000215_all_eeg_s1_r1_e1_social-only.vhdr, sub-3000215_all_eeg_s1_r1_e1_before-social.eeg, sub-3000215_all_eeg_s1_r1_e1_social-only.eeg, sub-3000215_all_eeg_s1_r1_e1_before-social.vmrk, sub-3000215_all_eeg_s1_r1_e1_social-only.vmrk",FAILED,NO/NOT ENOUGH EVENTS
+Lilly,2025-03-20,3000273,s1_r1,eeg,"sub-3000273_all_eeg_s1_r1_e1.vhdr, sub-3000273_all_eeg_s1_r1_e1.eeg, sub-3000273_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000279,s1_r1,eeg,"sub-3000279_all_eeg_s1_r1_e1.vhdr, sub-3000279_all_eeg_s1_r1_e1.eeg, sub-3000279_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000281,s1_r1,eeg,"sub-3000281_all_eeg_s1_r1_e1.vhdr, sub-3000281_all_eeg_s1_r1_e1.eeg, sub-3000281_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000282,s1_r1,eeg,"sub-3000282_all_eeg_s1_r1_e1.vhdr, sub-3000282_all_eeg_s1_r1_e1.eeg, sub-3000282_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000284,s1_r1,eeg,"sub-3000284_all_eeg_s1_r1_e1.vhdr, sub-3000284_all_eeg_s1_r1_e1.eeg, sub-3000284_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000285,s1_r1,eeg,"sub-3000285_all_eeg_s1_r1_e1.vhdr, sub-3000285_all_eeg_s1_r1_e1.eeg, sub-3000285_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000286,s1_r1,eeg,"sub-3000286_all_eeg_s1_r1_e1.vhdr, sub-3000286_all_eeg_s1_r1_e1.eeg, sub-3000286_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000287,s1_r1,eeg,"sub-3000287_all_eeg_s1_r1_e1.vhdr, sub-3000287_all_eeg_s1_r1_e1.eeg, sub-3000287_all_eeg_s1_r1_e1.vmrk",PASSED,
+Lilly,2025-03-20,3000289,s1_r1,eeg,"sub-3000289_all_eeg_s1_r1_e1.vhdr, sub-3000289_all_eeg_s1_r1_e1.eeg, sub-3000289_all_eeg_s1_r1_e1.vmrk",PASSED,

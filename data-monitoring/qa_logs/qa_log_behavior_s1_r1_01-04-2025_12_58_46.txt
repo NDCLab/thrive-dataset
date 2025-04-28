@@ -1,0 +1,30 @@
+
+sub-3000008 has deviation but ALL trial data! PASSED!
+
+sub-3000014 has deviation but ALL trial data! PASSED!
+
+sub-3000264 has deviation and SOME trial data! FAILED!
+
+sub-3000270 has ALL trial data! PASSED!
+
+sub-3000273 has ALL trial data! PASSED!
+
+sub-3000279 has ALL trial data! PASSED!
+
+sub-3000281 has ALL trial data! PASSED!
+
+sub-3000282 has ALL trial data! PASSED!
+
+sub-3000284 has ALL trial data! PASSED!
+
+sub-3000285 has ALL trial data! PASSED!
+
+sub-3000286 has ALL trial data! PASSED!
+
+sub-3000287 has ALL trial data! PASSED!
+
+sub-3000289 has ALL trial data! PASSED!
+
+sub-3000295 has ALL trial data! PASSED!
+
+sub-3000306 has ALL trial data! PASSED!
