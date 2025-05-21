@@ -1,0 +1,277 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000141
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000144
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000152
+sub-3000152 has incorrect number of files and no deviation was found! FAILED!
+sub-3000152 does NOT have all events! FAILED!
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000160
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000162
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000168
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000171
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000172
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000173
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000175
+       name: 'sub-3000141_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000141'
+       date: '28-Apr-2025 15:43:16'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000144_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000144'
+       date: '28-Apr-2025 15:43:17'
+      bytes: 11588
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000180
+       name: 'sub-3000180_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000180'
+       date: '28-Apr-2025 15:44:05'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000160_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000160'
+       date: '28-Apr-2025 15:43:24'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000162_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000162'
+       date: '28-Apr-2025 15:43:28'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000168_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000168'
+       date: '28-Apr-2025 15:43:33'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000171_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000171'
+       date: '28-Apr-2025 15:43:39'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000172_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000172'
+       date: '28-Apr-2025 15:43:44'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000173_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000173'
+       date: '28-Apr-2025 15:43:45'
+      bytes: 11555
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000175_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000175'
+       date: '28-Apr-2025 15:43:50'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000168 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000185
+       name: 'sub-3000185_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000185'
+       date: '28-Apr-2025 15:44:19'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000162 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+pop_loadbv(): reading marker file
+Event resorted by increasing latencies.
+sub-3000171 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000173 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+sub-3000144 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000183
+       name: 'sub-3000183_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000183'
+       date: '02-May-2025 16:18:03'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000186
+       name: 'sub-3000186_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000186'
+       date: '28-Apr-2025 15:44:25'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000179
+       name: 'sub-3000179_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000179'
+       date: '28-Apr-2025 15:44:00'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000141 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000180 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000160 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000172 has ALL events! PASSED!
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+sub-3000175 has ALL events! PASSED!
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000178
+       name: 'sub-3000178_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000178'
+       date: '28-Apr-2025 15:43:55'
+      bytes: 11588
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000181
+       name: 'sub-3000181_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000181'
+       date: '28-Apr-2025 15:44:12'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000183 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000185 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000186 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000179 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000181 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000178 has ALL events! PASSED!
