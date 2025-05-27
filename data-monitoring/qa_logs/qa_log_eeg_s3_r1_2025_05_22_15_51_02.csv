@@ -1,0 +1,5 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-05-22,3000039,s3_r1,eeg,"sub-3000039_all_eeg_s3_r1_e1.vhdr, sub-3000039_all_eeg_s3_r1_e1.eeg, sub-3000039_all_eeg_s3_r1_e1.vmrk",FAILED,NO/NOT ENOUGH EVENTS
+Lilly,2025-05-22,3000049,s3_r1,eeg,"sub-3000049_all_eeg_s3_r1_e1.vhdr, sub-3000049_all_eeg_s3_r1_e1.eeg, sub-3000049_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-05-22,3000053,s3_r1,eeg,"sub-3000053_all_eeg_s3_r1_e1.vhdr, sub-3000053_all_eeg_s3_r1_e1.eeg, sub-3000053_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-05-22,3000060,s3_r1,eeg,"sub-3000060_all_eeg_s3_r1_e1.vhdr, sub-3000060_all_eeg_s3_r1_e1.eeg, sub-3000060_all_eeg_s3_r1_e1.vmrk",PASSED,

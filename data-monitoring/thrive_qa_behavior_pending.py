@@ -8,7 +8,7 @@ from datetime import datetime
 r_name = "Lilly"
 dtype = "psychopy"
 dataset_path = "/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/" # mofify if your behavioral data is in another folder
-session = "s1_r1" # modify if using for another session
+session = "s3_r1" # modify if using for another session
 subject_data_paths = sorted(glob(f"{dataset_path}{session}/psychopy/sub-*"))
 pattern = r'sub-(\d{7})' # regex to take subject id
 extensions = ['.log', '.csv', '.psydat']

@@ -6,7 +6,7 @@
 #SBATCH --partition=highmem1
 
 SINGULARITY_VERSION="3.8.2"
-HM_CONTAINER="/home/data/NDClab/tools/containers/hallMonitor2/hm2_0-4-0.sif"
+HM_CONTAINER="/home/data/NDClab/tools/containers/hallMonitor2/hm2_0-4-4.sif"
 DATASET="/home/data/NDClab/datasets/thrive-dataset"
 
 module load "singularity-$SINGULARITY_VERSION"

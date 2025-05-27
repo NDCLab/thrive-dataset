@@ -1,0 +1,109 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 10).
+
+ans = 
+
+ ProcessPool with properties: 
+
+            Connected: true
+           NumWorkers: 10
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Parallel pool with 10 workers is running.
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000039
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000049
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000053
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000060
+       name: 'sub-3000039_all_eeg_s3_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000039'
+       date: '02-May-2025 10:47:01'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3974e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000049_all_eeg_s3_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000049'
+       date: '10-May-2025 17:41:22'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3975e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000053_all_eeg_s3_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000053'
+       date: '18-May-2025 14:17:32'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3976e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000060_all_eeg_s3_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000060'
+       date: '18-May-2025 14:48:55'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3976e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000049 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Warning: 'type' field value 'S 41' not found
+Warning: 'type' field value 'S 42' not found
+Warning: 'type' field value 'S 43' not found
+Warning: 'type' field value 'S 44' not found
+Warning: 'type' field value 'S 51' not found
+Warning: 'type' field value 'S 52' not found
+Warning: 'type' field value 'S 53' not found
+Warning: 'type' field value 'S 54' not found
+Event resorted by increasing latencies.
+sub-3000039 has NO stimulus events and no deviation was found! FAILED!
+Warning: 'type' field value 'S 11' not found
+Warning: 'type' field value 'S 12' not found
+Warning: 'type' field value 'S 21' not found
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+sub-3000039 has NO response events and no deviation was found! FAILED!
+sub-3000039 does NOT have all events! FAILED!
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000060 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000053 has ALL events! PASSED!
+EEG QA complete.

@@ -1,0 +1,65 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000310
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000312
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000317
+       name: 'sub-3000310_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000310'
+       date: '17-May-2025 19:23:17'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3975e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000317_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000317'
+       date: '14-May-2025 18:39:28'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3975e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Warning: 'type' field value 'S 41' not found
+Warning: 'type' field value 'S 42' not found
+Warning: 'type' field value 'S 43' not found
+Warning: 'type' field value 'S 44' not found
+Event resorted by increasing latencies.
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000310 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Warning: 'type' field value 'S 51' not found
+Warning: 'type' field value 'S 52' not found
+Warning: 'type' field value 'S 53' not found
+Warning: 'type' field value 'S 54' not found
+Event resorted by increasing latencies.
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+sub-3000312 has deviation but ALL stimulus events!
+sub-3000312 has deviation but ALL response events!
+sub-3000312 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+sub-3000317 has ALL events! PASSED!
