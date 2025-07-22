@@ -1,0 +1,116 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000315
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000329
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000330
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000335
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000339
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000341
+       name: 'sub-3000329_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000329'
+       date: '11-Jul-2025 15:35:10'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3981e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000330_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000330'
+       date: '10-Jul-2025 21:17:36'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3981e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000341_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000341'
+       date: '14-Jul-2025 12:35:26'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3981e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000315_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000315'
+       date: '06-Jul-2025 13:05:21'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3980e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000339_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000339'
+       date: '14-Jul-2025 12:56:51'
+      bytes: 11659
+      isdir: 0
+    datenum: 7.3981e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Warning: 'type' field value 'S 41' not found
+Warning: 'type' field value 'S 42' not found
+Warning: 'type' field value 'S 43' not found
+Warning: 'type' field value 'S 44' not found
+Warning: 'type' field value 'S 51' not found
+Warning: 'type' field value 'S 52' not found
+Warning: 'type' field value 'S 53' not found
+Warning: 'type' field value 'S 54' not found
+Event resorted by increasing latencies.
+Warning: 'type' field value 'S 21' not found
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000335 has deviation but ALL stimulus events!
+sub-3000335 has deviation but ALL response events!
+sub-3000335 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000341 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000315 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000329 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000339 has ALL events! PASSED!
+sub-3000330 has ALL events! PASSED!

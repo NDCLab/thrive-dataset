@@ -2,8 +2,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --time=7-00:00:00
-#SBATCH --account=acc_gbuzzell
-#SBATCH --partition=default-alternate
+#SBATCH --account=iacc_gbuzzell
+#SBATCH --qos=highmem1
+#SBATCH --partition=highmem1
 
 SINGULARITY_VERSION="3.8.2"
 HM_CONTAINER="/home/data/NDClab/tools/containers/hallMonitor2/hm2_0-5-2.sif"

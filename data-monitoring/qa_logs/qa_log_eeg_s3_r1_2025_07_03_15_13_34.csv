@@ -1,0 +1,4 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-07-03,3000074,s3_r1,eeg,"sub-3000074_all_eeg_s3_r1_e1.vhdr, sub-3000074_all_eeg_s3_r1_e1.eeg, sub-3000074_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-07-03,3000080,s3_r1,eeg,"sub-3000080_all_eeg_s3_r1_e1.vhdr, sub-3000080_all_eeg_s3_r1_e1.eeg, sub-3000080_all_eeg_s3_r1_e1.vmrk",PASSED,
+Lilly,2025-07-03,3000081,s3_r1,eeg,"sub-3000081_all_eeg_s3_r1_e1.vhdr, sub-3000081_all_eeg_s3_r1_e1.eeg, sub-3000081_all_eeg_s3_r1_e1.vmrk",PASSED,

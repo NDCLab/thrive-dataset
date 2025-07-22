@@ -1,0 +1,3 @@
+datetime,user,identifier,subject,dataType,encrypted,suffix,errorType,errorDetails
+2025-07-18_12-35,llaplace,sub-3000071_all_audacity_s3_r1_e1,3000071,audacity,1,s3_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s3_r1/audacity/sub-3000071/, folder is not present)"
+2025-07-18_12-35,llaplace,sub-3000335_all_zoom_s1_r1_e1,3000335,zoom,1,s1_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s1_r1/zoom/sub-3000335/, folder is not present)"
