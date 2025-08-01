@@ -1,0 +1,34 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000347
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000351
+       name: 'sub-3000347_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000347'
+       date: '22-Jul-2025 20:44:15'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3982e+05
+
+pop_loadbv(): reading header file
+Done.
+       name: 'sub-3000351_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000351'
+       date: '22-Jul-2025 20:44:20'
+      bytes: 11596
+      isdir: 0
+    datenum: 7.3982e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000351 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000347 has ALL events! PASSED!

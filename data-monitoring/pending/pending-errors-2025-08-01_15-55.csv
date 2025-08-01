@@ -1,0 +1,6 @@
+datetime,user,identifier,subject,dataType,encrypted,suffix,errorType,errorDetails
+2025-08-01_15-54,llaplace,sub-3000071_all_audacity_s3_r1_e1,3000071,audacity,1,s3_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/sub-3000071/s3_r1/audacity/, folder is not present)"
+2025-08-01_15-54,llaplace,sub-3000216_all_zoom_s2_r1_e1,3000216,zoom,1,s2_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/sub-3000216/s2_r1/zoom/, folder is not present)"
+2025-08-01_15-54,llaplace,sub-3000335_all_zoom_s1_r1_e1,3000335,zoom,1,s1_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/sub-3000335/s1_r1/zoom/, folder is not present)"
+2025-08-01_15-55,llaplace,sub-3000357_arrow-alert-v1-1_psychopy_s1_r1_e1,3000357,psychopy,0,s1_r1,Combination variable error,Combination row arrow-alert_psychopy has no variables present in /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s1_r1/psychopy/sub-3000357/
+2025-08-01_15-55,llaplace,sub-3000357_arrow-alert-v1-2_psychopy_s1_r1_e1,3000357,psychopy,0,s1_r1,Combination variable error,Combination row arrow-alert_psychopy has no variables present in /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s1_r1/psychopy/sub-3000357/

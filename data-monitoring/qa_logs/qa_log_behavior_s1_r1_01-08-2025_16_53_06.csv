@@ -1,0 +1,5 @@
+name,date,sub,session,dtype,fname,status
+Lilly,2025-08-01,3000336,s1_r1,psychopy,"sub-3000336_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000336_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000336_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED
+Lilly,2025-08-01,3000348,s1_r1,psychopy,"sub-3000348_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000348_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000348_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED
+Lilly,2025-08-01,3000355,s1_r1,psychopy,"sub-3000355_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000355_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000355_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED
+Lilly,2025-08-01,3000357,s1_r1,psychopy,"sub-3000357_arrow-alert-v1-2_psychopy_s1_r1_e1.csv,sub-3000357_arrow-alert-v1-2_psychopy_s1_r1_e1.log,sub-3000357_arrow-alert-v1-2_psychopy_s1_r1_e1.psydat",PASSED

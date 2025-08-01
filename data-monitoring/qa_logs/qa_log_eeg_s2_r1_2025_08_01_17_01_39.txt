@@ -1,0 +1,85 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000229
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000236
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000241
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000243
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000244
+       name: 'sub-3000229_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000229'
+       date: '25-Jul-2025 21:18:20'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3982e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000236_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000236'
+       date: '27-Jul-2025 13:16:49'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3983e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000241_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000241'
+       date: '29-Jul-2025 20:49:34'
+      bytes: 11563
+      isdir: 0
+    datenum: 7.3983e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000243_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000243'
+       date: '29-Jul-2025 20:48:25'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3983e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000244_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000244'
+       date: '23-Jul-2025 21:38:27'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3982e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000229 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000244 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000236 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000241 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000243 has ALL events! PASSED!

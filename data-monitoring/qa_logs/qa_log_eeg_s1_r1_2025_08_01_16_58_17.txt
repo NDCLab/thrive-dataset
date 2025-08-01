@@ -1,0 +1,68 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000336
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000348
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000355
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000357
+       name: 'sub-3000336_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000336'
+       date: '26-Jul-2025 13:31:03'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3982e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000348_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000348'
+       date: '27-Jul-2025 13:31:54'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3983e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000355_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000355'
+       date: '27-Jul-2025 17:18:06'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3983e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000357_all_eeg_s1_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000357'
+       date: '26-Jul-2025 14:04:38'
+      bytes: 11563
+      isdir: 0
+    datenum: 7.3982e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000355 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000357 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000348 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000336 has ALL events! PASSED!
