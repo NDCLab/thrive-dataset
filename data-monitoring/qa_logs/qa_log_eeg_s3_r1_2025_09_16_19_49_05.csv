@@ -1,0 +1,2 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-09-16,3000084,s3_r1,eeg,"sub-3000084_all_eeg_s3_r1_e1_after-condition-one.vhdr, sub-3000084_all_eeg_s3_r1_e1_condition-one-only.vhdr, sub-3000084_all_eeg_s3_r1_e1_after-condition-one.eeg, sub-3000084_all_eeg_s3_r1_e1_condition-one-only.eeg, sub-3000084_all_eeg_s3_r1_e1_after-condition-one.vmrk, sub-3000084_all_eeg_s3_r1_e1_condition-one-only.vmrk",FAILED,NO/NOT ENOUGH EVENTS

@@ -1,0 +1,17 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000101
+       name: 'sub-3000101_all_eeg_s3_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000101'
+       date: '08-Aug-2025 19:28:31'
+      bytes: 3468
+      isdir: 0
+    datenum: 7.3984e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000101 has ALL events! PASSED!

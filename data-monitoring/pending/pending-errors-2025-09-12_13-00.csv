@@ -1,0 +1,6 @@
+datetime,user,identifier,subject,dataType,encrypted,suffix,errorType,errorDetails
+2025-09-12_13-01,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Missing files to process,"First line of deviation file is ""EEG recording stopped due to losing connection during Block 9 of the first condition of the Flanker task (Observed). It was restarted during Block 10, but disconnected again, so it was restarted a second (and final) time before the second condition (Observe Other).
+"", should contain ""files to process"""
+2025-09-12_13-00,llaplace,sub-3000193_all_audacity_s2_r1_e1,3000193,audacity,1,s2_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s2_r1/audacity/sub-3000193/, folder exists but no identifier or sub-3000193_all_audacity_s2_r1_e1_no-data.txt was found)"
+2025-09-12_13-00,llaplace,sub-3000193_all_audacity_s2_r1_e1,3000193,audacity,1,s2_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/sub-3000193/s2_r1/audacity/, folder is not present)"
+2025-09-12_13-00,llaplace,sub-3000362_all_digi_s1_r1_e1,3000362,digi,1,s1_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/sub-3000362/s1_r1/digi/, folder is not present)"

@@ -1,0 +1,23 @@
+datetime,user,identifier,subject,dataType,encrypted,suffix,errorType,errorDetails
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Issue file,Found issue.txt in /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s3_r1/eeg/sub-3000084
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Naming error,"File name sub-3000084_all_eeg_s3_r1_e1_after-condition-one.vmrk contains additional information (after-condition-one), but deviation.txt is missing"
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Naming error,"File name sub-3000084_all_eeg_s3_r1_e1_after-condition-one.eeg contains additional information (after-condition-one), but deviation.txt is missing"
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Naming error,"File name sub-3000084_all_eeg_s3_r1_e1_condition-one-only.vmrk contains additional information (condition-one-only), but deviation.txt is missing"
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Naming error,"File name sub-3000084_all_eeg_s3_r1_e1_after-condition-one.vhdr contains additional information (after-condition-one), but deviation.txt is missing"
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Naming error,"File name sub-3000084_all_eeg_s3_r1_e1_condition-one-only.eeg contains additional information (condition-one-only), but deviation.txt is missing"
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Naming error,"File name sub-3000084_all_eeg_s3_r1_e1_condition-one-only.vhdr contains additional information (condition-one-only), but deviation.txt is missing"
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Missing file,Expected file sub-3000084_all_eeg_s3_r1_e1.eeg not found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Missing file,Expected file sub-3000084_all_eeg_s3_r1_e1.vhdr not found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Missing file,Expected file sub-3000084_all_eeg_s3_r1_e1.vmrk not found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Unexpected file,Unexpected file issue.txt found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Unexpected file,Unexpected file sub-3000084_all_eeg_s3_r1_e1_after-condition-one.vmrk found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Unexpected file,Unexpected file sub-3000084_all_eeg_s3_r1_e1_after-condition-one.eeg found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Unexpected file,Unexpected file sub-3000084_all_eeg_s3_r1_e1_condition-one-only.vmrk found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Unexpected file,Unexpected file sub-3000084_all_eeg_s3_r1_e1_after-condition-one.vhdr found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Unexpected file,Unexpected file sub-3000084_all_eeg_s3_r1_e1_condition-one-only.eeg found
+2025-09-12_12-50,llaplace,sub-3000084_all_eeg_s3_r1_e1,3000084,eeg,0,s3_r1,Unexpected file,Unexpected file sub-3000084_all_eeg_s3_r1_e1_condition-one-only.vhdr found
+2025-09-12_12-49,llaplace,sub-3000193_all_audacity_s2_r1_e1,3000193,audacity,1,s2_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/sub-3000193/s2_r1/audacity/, folder is not present)"
+2025-09-12_12-50,llaplace,sub-3000193_all_audacity_s2_r1_e1,3000193,audacity,1,s2_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s2_r1/audacity/sub-3000193/, folder exists but no identifier or sub-3000193_all_audacity_s2_r1_e1_no-data.txt was found)"
+2025-09-12_12-49,llaplace,sub-3000362_all_digi_s1_r1_e1,3000362,digi,1,s1_r1,Missing identifier,"Missing identifier (should be at /home/data/NDClab/datasets/thrive-dataset/sourcedata/checked/sub-3000362/s1_r1/digi/, folder is not present)"
+2025-09-12_12-51,llaplace,sub-3000362_all_digi_s1_r1_e1,3000362,digi,1,s1_r1,Issue file,Found issue.txt in /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s1_r1/digi/sub-3000362
+2025-09-12_12-51,llaplace,sub-3000362_all_digi_s1_r1_e1,3000362,digi,1,s1_r1,Unexpected file,Unexpected file issue.txt found

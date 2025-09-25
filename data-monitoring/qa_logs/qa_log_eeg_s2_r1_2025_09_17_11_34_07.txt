@@ -1,0 +1,46 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000239
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000247
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000259
+pop_loadbv(): reading header file
+Done.
+       name: 'sub-3000247_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000247'
+       date: '13-Sep-2025 18:05:58'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3987e+05
+
+pop_loadbv(): reading header file
+Done.
+       name: 'sub-3000259_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000259'
+       date: '14-Sep-2025 12:46:26'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3987e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): reading EEG data
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000239 has deviation but ALL stimulus events!
+sub-3000239 has deviation but ALL response events!
+sub-3000239 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000247 has ALL events! PASSED!
+Event resorted by increasing latencies.
+sub-3000259 has ALL events! PASSED!

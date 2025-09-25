@@ -1,0 +1,3 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-08-18,3000193,s2_r1,eeg,"sub-3000193_all_eeg_s2_r1_e1.vhdr, sub-3000193_all_eeg_s2_r1_e1.eeg, sub-3000193_all_eeg_s2_r1_e1.vmrk",PASSED,
+Lilly,2025-08-18,3000201,s2_r1,eeg,"sub-3000201_all_eeg_s2_r1_e1.vhdr, sub-3000201_all_eeg_s2_r1_e1.eeg, sub-3000201_all_eeg_s2_r1_e1.vmrk",PASSED,
