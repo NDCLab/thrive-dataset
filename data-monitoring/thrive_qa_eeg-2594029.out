@@ -1,0 +1,106 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 10).
+
+ans = 
+
+ ProcessPool with properties: 
+
+            Connected: true
+           NumWorkers: 10
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Parallel pool with 10 workers is running.
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000246
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000255
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000256
+       name: 'sub-3000246_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000246'
+       date: '19-Sep-2025 20:44:21'
+      bytes: 11580
+      isdir: 0
+    datenum: 7.3988e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000255_all_eeg_s2_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s2_r1/eeg/sub-3000255'
+       date: '16-Sep-2025 21:07:22'
+      bytes: 11571
+      isdir: 0
+    datenum: 7.3988e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Warning: 'type' field value 'S 41' not found
+Warning: 'type' field value 'S 42' not found
+Warning: 'type' field value 'S 43' not found
+Warning: 'type' field value 'S 44' not found
+Warning: 'type' field value 'S 51' not found
+Warning: 'type' field value 'S 52' not found
+Warning: 'type' field value 'S 53' not found
+Warning: 'type' field value 'S 54' not found
+Event resorted by increasing latencies.
+Warning: 'type' field value 'S 11' not found
+Warning: 'type' field value 'S 12' not found
+Warning: 'type' field value 'S 21' not found
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Warning: 'type' field value 'S 51' not found
+Warning: 'type' field value 'S 52' not found
+Warning: 'type' field value 'S 53' not found
+Warning: 'type' field value 'S 54' not found
+Event resorted by increasing latencies.
+Warning: 'type' field value 'S 22' not found
+Event resorted by increasing latencies.
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000246 has ALL events! PASSED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000256 has deviation and SOME stimulus events! FAILED!
+sub-3000256 has deviation but ALL response events!
+sub-3000256 does NOT have all events! FAILED!
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000255 has ALL events! PASSED!
+EEG QA complete.
