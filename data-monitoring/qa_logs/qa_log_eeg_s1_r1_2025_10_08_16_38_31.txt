@@ -1,0 +1,12 @@
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s1_r1/eeg/sub-3000353
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000353 has deviation but ALL stimulus events!
+sub-3000353 has deviation but ALL response events!
+sub-3000353 has ALL events! PASSED!

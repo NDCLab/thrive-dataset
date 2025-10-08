@@ -329,3 +329,4 @@
 2025-08-26_12:50:49 Preprocessing ran: view slurm-2478491.out file to see effects.
 2025-09-08_13:12:10 Preprocessing ran: view slurm-2520121.out file to see effects.
 2025-09-18_11:49:28 Preprocessing ran: view slurm-2562196.out file to see effects.
+2025-10-08_12:42:24 Data monitoring status for job 2613438: error; 1094 errors seen, check slurm-2613438_errorlog.out for more info
