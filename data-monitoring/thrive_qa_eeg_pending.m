@@ -28,7 +28,7 @@ rmpath(['/home/data/NDClab/tools/lab-devOps/scripts/MADE_pipeline_standard/eegla
 r_name = 'Lilly';
 dtype = 'eeg';
 dataset_path = '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/'; % Modify if your behavioral data is in another folder
-session = 's3_r1'; % Modify if using for another session
+session = 's2_r1'; % Modify if using for another session
 % Get the list of subject data paths
 subject_data_paths = dir(fullfile(dataset_path, session, dtype, 'sub-*/'));
 to_remove = ismember({subject_data_paths.name}, {'.', '..','.DS_Store'});
