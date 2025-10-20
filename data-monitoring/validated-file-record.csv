@@ -774,7 +774,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000165_all_digi_s1_r1_e1,sub-3000165,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000165_all_zoom_s1_r1_e1,sub-3000165,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000165_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000165,psychopy,0,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000166_all_audacity_s1_r1_e1,sub-3000166,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000166_all_digi_s1_r1_e1,sub-3000166,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000166_all_eeg_s1_r1_e1,sub-3000166,eeg,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000166_all_zoom_s1_r1_e1,sub-3000166,zoom,1,s1_r1_e1
@@ -849,7 +848,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000180_all_zoom_s1_r1_e1,sub-3000180,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000180_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000180,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000181_all_audacity_s1_r1_e1,sub-3000181,audacity,1,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000181_all_zoom_s1_r1_e1,sub-3000181,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000181_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000181,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000182_all_audacity_s1_r1_e1,sub-3000182,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000182_all_digi_s1_r1_e1,sub-3000182,digi,1,s1_r1_e1
@@ -886,13 +884,11 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000191_all_eeg_s1_r1_e1,sub-3000191,eeg,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000191_all_zoom_s1_r1_e1,sub-3000191,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000191_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000191,psychopy,0,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000192_all_audacity_s1_r1_e1,sub-3000192,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000192_all_digi_s1_r1_e1,sub-3000192,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000192_all_eeg_s1_r1_e1,sub-3000192,eeg,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000192_all_zoom_s1_r1_e1,sub-3000192,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000192_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000192,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000193_all_audacity_s1_r1_e1,sub-3000193,audacity,1,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000193_all_digi_s1_r1_e1,sub-3000193,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000193_all_eeg_s1_r1_e1,sub-3000193,eeg,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000193_all_zoom_s1_r1_e1,sub-3000193,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000193_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000193,psychopy,0,s1_r1_e1
@@ -937,7 +933,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000205_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000205,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000208_all_audacity_s1_r1_e1,sub-3000208,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000208_all_eeg_s1_r1_e1,sub-3000208,eeg,0,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000208_all_zoom_s1_r1_e1,sub-3000208,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000208_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000208,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000210_all_audacity_s1_r1_e1,sub-3000210,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000210_all_digi_s1_r1_e1,sub-3000210,digi,1,s1_r1_e1
@@ -1013,7 +1008,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000229_all_zoom_s1_r1_e1,sub-3000229,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000229_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000229,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000232_all_audacity_s1_r1_e1,sub-3000232,audacity,1,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000232_all_digi_s1_r1_e1,sub-3000232,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000232_all_zoom_s1_r1_e1,sub-3000232,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000234_all_audacity_s1_r1_e1,sub-3000234,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000234_all_digi_s1_r1_e1,sub-3000234,digi,1,s1_r1_e1
@@ -2509,3 +2503,8 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-10-13_17-26,llaplace,sub-3000260_all_zoom_s2_r1_e1,3000260,zoom,1,s2_r1
 2025-10-13_17-26,llaplace,sub-3000260_arrow-alert-v1-2_psychopy_s2_r1_e1,3000260,psychopy,0,s2_r1
 2025-10-13_18-00,llaplace,sub-3000181_all_digi_s1_r1_e1,3000181,digi,1,s1_r1
+2025-10-17_15-26,llaplace,sub-3000142_all_audacity_s1_r1_e1,3000142,audacity,1,s1_r1
+2025-10-17_15-26,llaplace,sub-3000166_all_audacity_s1_r1_e1,3000166,audacity,1,s1_r1
+2025-10-17_15-26,llaplace,sub-3000193_all_digi_s1_r1_e1,3000193,digi,1,s1_r1
+2025-10-17_15-26,llaplace,sub-3000208_all_zoom_s1_r1_e1,3000208,zoom,1,s1_r1
+2025-10-17_15-26,llaplace,sub-3000232_all_digi_s1_r1_e1,3000232,digi,1,s1_r1
