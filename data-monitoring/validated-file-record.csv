@@ -301,13 +301,11 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000058_arrow-alert-v1-2_psychopy_s2_r1_e1,sub-3000058,psychopy,0,s2_r1_e1
 2025-02-06_18-08,nwelch,sub-3000059_all_digi_s1_r1_e1,sub-3000059,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000059_all_eeg_s1_r1_e1,sub-3000059,eeg,0,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000059_all_zoom_s1_r1_e1,sub-3000059,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000059_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000059,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000060_all_audacity_s1_r1_e1,sub-3000060,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000060_all_audacity_s2_r1_e1,sub-3000060,audacity,1,s2_r1_e1
 2025-02-06_18-08,nwelch,sub-3000060_all_digi_s1_r1_e1,sub-3000060,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000060_all_eeg_s1_r1_e1,sub-3000060,eeg,0,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000060_all_zoom_s1_r1_e1,sub-3000060,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000060_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000060,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000060_arrow-alert-v1-2_psychopy_s2_r1_e1,sub-3000060,psychopy,0,s2_r1_e1
 2025-02-06_18-08,nwelch,sub-3000062_all_audacity_s1_r1_e1,sub-3000062,audacity,1,s1_r1_e1
@@ -886,7 +884,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000191_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000191,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000192_all_digi_s1_r1_e1,sub-3000192,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000192_all_eeg_s1_r1_e1,sub-3000192,eeg,0,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000192_all_zoom_s1_r1_e1,sub-3000192,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000192_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000192,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000193_all_audacity_s1_r1_e1,sub-3000193,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000193_all_eeg_s1_r1_e1,sub-3000193,eeg,0,s1_r1_e1
@@ -1010,7 +1007,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000232_all_audacity_s1_r1_e1,sub-3000232,audacity,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000232_all_zoom_s1_r1_e1,sub-3000232,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000234_all_audacity_s1_r1_e1,sub-3000234,audacity,1,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000234_all_digi_s1_r1_e1,sub-3000234,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000234_all_eeg_s1_r1_e1,sub-3000234,eeg,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000234_all_zoom_s1_r1_e1,sub-3000234,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000234_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000234,psychopy,0,s1_r1_e1
@@ -1072,7 +1068,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-02-06_18-08,nwelch,sub-3000252_all_zoom_s1_r1_e1,sub-3000252,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000252_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000252,psychopy,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000253_all_audacity_s1_r1_e1,sub-3000253,audacity,1,s1_r1_e1
-2025-02-06_18-08,nwelch,sub-3000253_all_digi_s1_r1_e1,sub-3000253,digi,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000253_all_eeg_s1_r1_e1,sub-3000253,eeg,0,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000253_all_zoom_s1_r1_e1,sub-3000253,zoom,1,s1_r1_e1
 2025-02-06_18-08,nwelch,sub-3000253_arrow-alert-v1-2_psychopy_s1_r1_e1,sub-3000253,psychopy,0,s1_r1_e1
@@ -1756,8 +1751,6 @@ datetime,user,identifier,subject,dataType,encrypted,suffix
 2025-06-10_17-49,llaplace,sub-3000060_arrow-alert-v1-2_psychopy_s3_r1_e1,3000060,psychopy,0,s3_r1
 2025-06-10_17-49,llaplace,sub-3000167_all_audacity_s2_r1_e1,3000167,audacity,1,s2_r1
 2025-06-10_17-49,llaplace,sub-3000167_all_digi_s2_r1_e1,3000167,digi,1,s2_r1
-2025-06-10_17-49,llaplace,sub-3000167_all_eeg_s2_r1_e1,3000167,eeg,0,s2_r1
-2025-06-10_17-49,llaplace,sub-3000167_all_zoom_s2_r1_e1,3000167,zoom,1,s2_r1
 2025-06-10_17-49,llaplace,sub-3000167_arrow-alert-v1-2_psychopy_s2_r1_e1,3000167,psychopy,0,s2_r1
 2025-06-10_17-49,llaplace,sub-3000170_all_audacity_s2_r1_e1,3000170,audacity,1,s2_r1
 2025-06-10_17-49,llaplace,sub-3000170_all_digi_s2_r1_e1,3000170,digi,1,s2_r1
