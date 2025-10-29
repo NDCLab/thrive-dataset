@@ -1,0 +1,4 @@
+name,date,sub,session,dtype,fname,status,notes
+Lilly,2025-10-27,3000167,s2_r1,eeg,"sub-3000167_all_eeg_s2_r1_e1_flanker-only.vhdr, sub-3000167_all_eeg_s2_r1_e1_flanker-only.eeg, sub-3000167_all_eeg_s2_r1_e1_flanker-only.vmrk",PASSED,
+Lilly,2025-10-27,3000231,s2_r1,eeg,"sub-3000231_all_eeg_s2_r1_e1.vhdr, sub-3000231_all_eeg_s2_r1_e1.eeg, sub-3000231_all_eeg_s2_r1_e1.vmrk",PASSED,
+Lilly,2025-10-27,3000261,s2_r1,eeg,"sub-3000261_all_eeg_s2_r1_e1_afterPractice.vhdr, sub-3000261_all_eeg_s2_r1_e1_practice-only.vhdr, sub-3000261_all_eeg_s2_r1_e1_afterPractice.eeg, sub-3000261_all_eeg_s2_r1_e1_practice-only.eeg, sub-3000261_all_eeg_s2_r1_e1_afterPractice.vmrk, sub-3000261_all_eeg_s2_r1_e1_practice-only.vmrk",PASSED,
