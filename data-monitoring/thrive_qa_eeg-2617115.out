@@ -1,0 +1,61 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+                  R2021b (9.11.0.1769968) 64-bit (glnxa64)
+                             September 17, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 10).
+
+ans = 
+
+ ProcessPool with properties: 
+
+            Connected: true
+           NumWorkers: 10
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Parallel pool with 10 workers is running.
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000122
+Subject path: /home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000131
+       name: 'sub-3000122_all_eeg_s3_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000122'
+       date: '25-Oct-2025 17:36:48'
+      bytes: 11628
+      isdir: 0
+    datenum: 7.3992e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+       name: 'sub-3000131_all_eeg_s3_r1_e1.vhdr'
+     folder: '/home/data/NDClab/datasets/thrive-dataset/sourcedata/pending-qa/s3_r1/eeg/sub-3000131'
+       date: '25-Oct-2025 18:12:35'
+      bytes: 11539
+      isdir: 0
+    datenum: 7.3992e+05
+
+pop_loadbv(): reading header file
+Done.
+pop_loadbv(): reading EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): scaling EEG data
+pop_loadbv(): reading marker file
+pop_loadbv(): reading marker file
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000122 has ALL events! PASSED!
+Done.
+Event resorted by increasing latencies.
+Event resorted by increasing latencies.
+sub-3000131 has ALL events! PASSED!
+EEG QA complete.
