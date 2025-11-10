@@ -1,0 +1,3 @@
+datetime,user,identifier,subject,dataType,encrypted,suffix,errorType,errorDetails
+2025-11-10_15-50,llaplace,sub-3000150_all_digi_s3_r1_e1,3000150,digi,1,s3_r1,Issue file,Found issue.txt in /home/data/NDClab/datasets/thrive-dataset/sourcedata/raw/s3_r1/digi/sub-3000150
+2025-11-10_15-50,llaplace,sub-3000150_all_digi_s3_r1_e1,3000150,digi,1,s3_r1,Unexpected file,Unexpected file issue.txt found
